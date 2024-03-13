@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="timeCounter">
+		<CBX_INST_ENTRY INSTANCE_NAME="|timeCounter|block24:inst9|ct10:inst7|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_dik.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|timeCounter|block60:inst8|ct10:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_dik.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|timeCounter|block60:inst|ct10:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_dik.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|timeCounter|block24:inst9|ct10:inst6|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_dik.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|timeCounter|block60:inst8|ct10:inst1|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_dik.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|timeCounter|block60:inst|ct10:inst1|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_dik.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

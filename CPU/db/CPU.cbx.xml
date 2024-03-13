@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="CPU">
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|8choose1:inst11|ADD:inst1|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_ckh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|8choose1:inst11|mux0:inst|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_f3e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|8choose1:inst11|SUB:inst3|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_dlh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|8choose1:inst11|lpm_decode0:inst7|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_s6f.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|COUNTER8:inst1|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_k1j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|lpm_ram_dq1:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_dkc1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|lpm_ram_dq2:inst23|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_fnc1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|lpm_rom0:inst5|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_t781.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

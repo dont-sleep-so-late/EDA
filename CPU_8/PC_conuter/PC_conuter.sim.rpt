@@ -1,0 +1,222 @@
+Simulator report for PC_conuter
+Thu Oct 20 19:14:56 2022
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 49 nodes     ;
+; Simulation Coverage         ;      70.37 % ;
+; Total Number of Transitions ; 951          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C35F672C6 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      70.37 % ;
+; Total nodes checked                                 ; 49           ;
+; Total output ports checked                          ; 54           ;
+; Total output ports with complete 1/0-value coverage ; 38           ;
+; Total output ports with no 1/0-value coverage       ; 7            ;
+; Total output ports with no 1-value coverage         ; 10           ;
+; Total output ports with no 0-value coverage         ; 13           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                                       ;
++--------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                    ; Output Port Name                                                                                                ; Output Port Type ;
++--------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+------------------+
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_reg_bit1a[4] ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_hazard[4]           ; regout           ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_reg_bit1a[3] ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_hazard[3]           ; regout           ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_reg_bit1a[2] ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_hazard[2]           ; regout           ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_reg_bit1a[1] ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_hazard[1]           ; regout           ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_reg_bit1a[0] ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_hazard[0]           ; regout           ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita0   ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita0      ; combout          ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita0   ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita0~COUT ; cout             ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita1   ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita1      ; combout          ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita1   ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita1~COUT ; cout             ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita2   ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita2      ; combout          ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita2   ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita2~COUT ; cout             ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita3   ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita3      ; combout          ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita3   ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita3~COUT ; cout             ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita4   ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita4      ; combout          ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita4   ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita4~COUT ; cout             ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita5   ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita5      ; combout          ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[4]~2          ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[4]~2             ; combout          ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[4]~3          ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[4]~3             ; combout          ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[3]~4          ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[3]~4             ; combout          ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[3]~5          ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[3]~5             ; combout          ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[2]~6          ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[2]~6             ; combout          ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[2]~7          ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[2]~7             ; combout          ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[1]~8          ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[1]~8             ; combout          ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[1]~9          ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[1]~9             ; combout          ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[0]~10         ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[0]~10            ; combout          ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[0]~11         ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[0]~11            ; combout          ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[5]~12         ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[5]~12            ; combout          ;
+; |PC_conuter|PC[4]                                                                                            ; |PC_conuter|PC[4]                                                                                               ; padio            ;
+; |PC_conuter|PC[3]                                                                                            ; |PC_conuter|PC[3]                                                                                               ; padio            ;
+; |PC_conuter|PC[2]                                                                                            ; |PC_conuter|PC[2]                                                                                               ; padio            ;
+; |PC_conuter|PC[1]                                                                                            ; |PC_conuter|PC[1]                                                                                               ; padio            ;
+; |PC_conuter|PC[0]                                                                                            ; |PC_conuter|PC[0]                                                                                               ; padio            ;
+; |PC_conuter|aload                                                                                            ; |PC_conuter|aload~corein                                                                                        ; combout          ;
+; |PC_conuter|jump_address[3]                                                                                  ; |PC_conuter|jump_address[3]~corein                                                                              ; combout          ;
+; |PC_conuter|clk                                                                                              ; |PC_conuter|clk~corein                                                                                          ; combout          ;
+; |PC_conuter|aload~clkctrl                                                                                    ; |PC_conuter|aload~clkctrl                                                                                       ; outclk           ;
+; |PC_conuter|clk~clkctrl                                                                                      ; |PC_conuter|clk~clkctrl                                                                                         ; outclk           ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[5]~12clkctrl  ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[5]~12clkctrl     ; outclk           ;
++--------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                                                   ;
++------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                  ; Output Port Name                                                                                           ; Output Port Type ;
++------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+------------------+
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[5]~6  ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[5]~6  ; combout          ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[4]~7  ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[4]~7  ; combout          ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[3]~8  ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[3]~8  ; combout          ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[1]~10 ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[1]~10 ; combout          ;
+; |PC_conuter|clear                                                                                          ; |PC_conuter|clear~corein                                                                                   ; combout          ;
+; |PC_conuter|jump_address[5]                                                                                ; |PC_conuter|jump_address[5]~corein                                                                         ; combout          ;
+; |PC_conuter|jump_address[4]                                                                                ; |PC_conuter|jump_address[4]~corein                                                                         ; combout          ;
+; |PC_conuter|jump_address[2]                                                                                ; |PC_conuter|jump_address[2]~corein                                                                         ; combout          ;
+; |PC_conuter|jump_address[1]                                                                                ; |PC_conuter|jump_address[1]~corein                                                                         ; combout          ;
+; |PC_conuter|jump_address[0]                                                                                ; |PC_conuter|jump_address[0]~corein                                                                         ; combout          ;
++------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                                     ;
++--------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                    ; Output Port Name                                                                                           ; Output Port Type ;
++--------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+------------------+
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_reg_bit1a[5] ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_hazard[5]      ; regout           ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[5]~0          ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[5]~0        ; combout          ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[5]~1          ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[5]~1        ; combout          ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[5]~6    ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[5]~6  ; combout          ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[4]~7    ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[4]~7  ; combout          ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[2]~9    ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[2]~9  ; combout          ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[1]~10   ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[1]~10 ; combout          ;
+; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[0]~11   ; |PC_conuter|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[0]~11 ; combout          ;
+; |PC_conuter|PC[5]                                                                                            ; |PC_conuter|PC[5]                                                                                          ; padio            ;
+; |PC_conuter|clear                                                                                            ; |PC_conuter|clear~corein                                                                                   ; combout          ;
+; |PC_conuter|jump_address[5]                                                                                  ; |PC_conuter|jump_address[5]~corein                                                                         ; combout          ;
+; |PC_conuter|jump_address[4]                                                                                  ; |PC_conuter|jump_address[4]~corein                                                                         ; combout          ;
+; |PC_conuter|jump_address[1]                                                                                  ; |PC_conuter|jump_address[1]~corein                                                                         ; combout          ;
++--------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Thu Oct 20 19:14:55 2022
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off PC_conuter -c PC_conuter
+Info: Using vector source file "G:/mywork/CPU_8/PC_conuter/PC_conuter.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      70.37 %
+Info: Number of transitions in simulation is 951
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 158 megabytes
+    Info: Processing ended: Thu Oct 20 19:14:56 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

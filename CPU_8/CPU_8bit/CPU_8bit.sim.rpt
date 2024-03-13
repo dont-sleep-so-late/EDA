@@ -1,0 +1,389 @@
+Simulator report for CPU_8bit
+Tue Jun 06 11:40:18 2023
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |CPU_8bit|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|ALTSYNCRAM
+  6. |CPU_8bit|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|ALTSYNCRAM
+  7. Coverage Summary
+  8. Complete 1/0-Value Coverage
+  9. Missing 1-Value Coverage
+ 10. Missing 0-Value Coverage
+ 11. Simulator INI Usage
+ 12. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 2.0 us       ;
+; Simulation Netlist Size     ; 143 nodes    ;
+; Simulation Coverage         ;      61.11 % ;
+; Total Number of Transitions ; 4139         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C35F672C6 ;
++-----------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                         ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+; Option                                                                                     ; Setting       ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+; Simulation mode                                                                            ; Timing        ; Timing        ;
+; Start time                                                                                 ; 0 ns          ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF          ;               ;
+; Vector input source                                                                        ; counter16.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On            ; On            ;
+; Check outputs                                                                              ; Off           ; Off           ;
+; Report simulation coverage                                                                 ; On            ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On            ; On            ;
+; Display missing 1-value coverage report                                                    ; On            ; On            ;
+; Display missing 0-value coverage report                                                    ; On            ; On            ;
+; Detect setup and hold time violations                                                      ; Off           ; Off           ;
+; Detect glitches                                                                            ; Off           ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off           ; Off           ;
+; Generate Signal Activity File                                                              ; Off           ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off           ; Off           ;
+; Group bus channels in simulation results                                                   ; Off           ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On            ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE    ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off           ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off           ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto          ; Auto          ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++-------------------------------------------------------------------------------------------------------+
+; |CPU_8bit|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|ALTSYNCRAM ;
++-------------------------------------------------------------------------------------------------------+
+Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
+
+
++----------------------------------------------------------------------------------------------------+
+; |CPU_8bit|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|ALTSYNCRAM ;
++----------------------------------------------------------------------------------------------------+
+Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      61.11 % ;
+; Total nodes checked                                 ; 143          ;
+; Total output ports checked                          ; 162          ;
+; Total output ports with complete 1/0-value coverage ; 99           ;
+; Total output ports with no 1/0-value coverage       ; 47           ;
+; Total output ports with no 1-value coverage         ; 52           ;
+; Total output ports with no 0-value coverage         ; 58           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                                         ;
++---------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                     ; Output Port Name                                                                                                 ; Output Port Type ;
++---------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------------+
+; |CPU_8bit|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|ram_block1a0       ; |CPU_8bit|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|q_a[0]                ; portadataout0    ;
+; |CPU_8bit|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|ram_block1a0       ; |CPU_8bit|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|q_a[1]                ; portadataout1    ;
+; |CPU_8bit|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|ram_block1a0       ; |CPU_8bit|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|q_a[2]                ; portadataout2    ;
+; |CPU_8bit|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|ram_block1a0       ; |CPU_8bit|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|q_a[3]                ; portadataout3    ;
+; |CPU_8bit|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|ram_block1a0       ; |CPU_8bit|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|q_a[4]                ; portadataout4    ;
+; |CPU_8bit|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|ram_block1a0       ; |CPU_8bit|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|q_a[5]                ; portadataout5    ;
+; |CPU_8bit|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|ram_block1a0       ; |CPU_8bit|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|q_a[6]                ; portadataout6    ;
+; |CPU_8bit|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|ram_block1a0       ; |CPU_8bit|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|q_a[7]                ; portadataout7    ;
+; |CPU_8bit|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|ram_block1a0          ; |CPU_8bit|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|q_a[0]                   ; portadataout0    ;
+; |CPU_8bit|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|ram_block1a0          ; |CPU_8bit|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|q_a[1]                   ; portadataout1    ;
+; |CPU_8bit|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|ram_block1a0          ; |CPU_8bit|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|q_a[2]                   ; portadataout2    ;
+; |CPU_8bit|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|ram_block1a0          ; |CPU_8bit|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|q_a[3]                   ; portadataout3    ;
+; |CPU_8bit|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|ram_block1a0          ; |CPU_8bit|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|q_a[5]                   ; portadataout5    ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_reg_bit1a[5] ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_hazard[5]           ; regout           ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_reg_bit1a[4] ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_hazard[4]           ; regout           ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_reg_bit1a[3] ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_hazard[3]           ; regout           ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_reg_bit1a[2] ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_hazard[2]           ; regout           ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_reg_bit1a[1] ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_hazard[1]           ; regout           ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_reg_bit1a[0] ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_hazard[0]           ; regout           ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita0   ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita0      ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita0   ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita0~COUT ; cout             ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita1   ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita1      ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita1   ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita1~COUT ; cout             ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita2   ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita2      ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita2   ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita2~COUT ; cout             ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita3   ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita3      ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita3   ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita3~COUT ; cout             ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita4   ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita4      ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita4   ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita4~COUT ; cout             ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita5   ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita5      ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[5]~0          ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[5]~0             ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[5]~1          ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[5]~1             ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[4]~2          ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[4]~2             ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[4]~3          ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[4]~3             ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[3]~4          ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[3]~4             ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[3]~5          ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[3]~5             ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[2]~6          ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[2]~6             ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[2]~7          ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[2]~7             ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[1]~8          ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[1]~8             ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[1]~9          ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[1]~9             ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[0]~10         ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[0]~10            ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[0]~11         ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[0]~11            ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst11|45~0                                                                       ; |CPU_8bit|alu_16:inst|74181:inst11|45~0                                                                          ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst11|77~0                                                                       ; |CPU_8bit|alu_16:inst|74181:inst11|77~0                                                                          ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst11|77~1                                                                       ; |CPU_8bit|alu_16:inst|74181:inst11|77~1                                                                          ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst11|47~0                                                                       ; |CPU_8bit|alu_16:inst|74181:inst11|47~0                                                                          ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst11|43~0                                                                       ; |CPU_8bit|alu_16:inst|74181:inst11|43~0                                                                          ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst11|74~0                                                                       ; |CPU_8bit|alu_16:inst|74181:inst11|74~0                                                                          ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst|52~0                                                                         ; |CPU_8bit|alu_16:inst|74181:inst|52~0                                                                            ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst|45~0                                                                         ; |CPU_8bit|alu_16:inst|74181:inst|45~0                                                                            ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst|47~0                                                                         ; |CPU_8bit|alu_16:inst|74181:inst|47~0                                                                            ; combout          ;
+; |CPU_8bit|alu_16:inst|74182:inst8|23~0                                                                        ; |CPU_8bit|alu_16:inst|74182:inst8|23~0                                                                           ; combout          ;
+; |CPU_8bit|alu_16:inst|74182:inst8|23~1                                                                        ; |CPU_8bit|alu_16:inst|74182:inst8|23~1                                                                           ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst11|74~1                                                                       ; |CPU_8bit|alu_16:inst|74181:inst11|74~1                                                                          ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst11|77~2                                                                       ; |CPU_8bit|alu_16:inst|74181:inst11|77~2                                                                          ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst11|77~3                                                                       ; |CPU_8bit|alu_16:inst|74181:inst11|77~3                                                                          ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst11|82~2                                                                       ; |CPU_8bit|alu_16:inst|74181:inst11|82~2                                                                          ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst11|81~0                                                                       ; |CPU_8bit|alu_16:inst|74181:inst11|81~0                                                                          ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst11|81~1                                                                       ; |CPU_8bit|alu_16:inst|74181:inst11|81~1                                                                          ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst11|80                                                                         ; |CPU_8bit|alu_16:inst|74181:inst11|80                                                                            ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst|43~0                                                                         ; |CPU_8bit|alu_16:inst|74181:inst|43~0                                                                            ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst|74~0                                                                         ; |CPU_8bit|alu_16:inst|74181:inst|74~0                                                                            ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst|77~0                                                                         ; |CPU_8bit|alu_16:inst|74181:inst|77~0                                                                            ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst|77~1                                                                         ; |CPU_8bit|alu_16:inst|74181:inst|77~1                                                                            ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst|75~0                                                                         ; |CPU_8bit|alu_16:inst|74181:inst|75~0                                                                            ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst|82                                                                           ; |CPU_8bit|alu_16:inst|74181:inst|82                                                                              ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst|79                                                                           ; |CPU_8bit|alu_16:inst|74181:inst|79                                                                              ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst|81                                                                           ; |CPU_8bit|alu_16:inst|74181:inst|81                                                                              ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst|80~0                                                                         ; |CPU_8bit|alu_16:inst|74181:inst|80~0                                                                            ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst11|82~3                                                                       ; |CPU_8bit|alu_16:inst|74181:inst11|82~3                                                                          ; combout          ;
+; |CPU_8bit|cout[7]                                                                                             ; |CPU_8bit|cout[7]                                                                                                ; padio            ;
+; |CPU_8bit|cout[6]                                                                                             ; |CPU_8bit|cout[6]                                                                                                ; padio            ;
+; |CPU_8bit|cout[5]                                                                                             ; |CPU_8bit|cout[5]                                                                                                ; padio            ;
+; |CPU_8bit|cout[4]                                                                                             ; |CPU_8bit|cout[4]                                                                                                ; padio            ;
+; |CPU_8bit|cout[3]                                                                                             ; |CPU_8bit|cout[3]                                                                                                ; padio            ;
+; |CPU_8bit|cout[2]                                                                                             ; |CPU_8bit|cout[2]                                                                                                ; padio            ;
+; |CPU_8bit|cout[1]                                                                                             ; |CPU_8bit|cout[1]                                                                                                ; padio            ;
+; |CPU_8bit|cout[0]                                                                                             ; |CPU_8bit|cout[0]                                                                                                ; padio            ;
+; |CPU_8bit|S[5]                                                                                                ; |CPU_8bit|S[5]                                                                                                   ; padio            ;
+; |CPU_8bit|S[3]                                                                                                ; |CPU_8bit|S[3]                                                                                                   ; padio            ;
+; |CPU_8bit|S[2]                                                                                                ; |CPU_8bit|S[2]                                                                                                   ; padio            ;
+; |CPU_8bit|S[1]                                                                                                ; |CPU_8bit|S[1]                                                                                                   ; padio            ;
+; |CPU_8bit|S[0]                                                                                                ; |CPU_8bit|S[0]                                                                                                   ; padio            ;
+; |CPU_8bit|PC[5]                                                                                               ; |CPU_8bit|PC[5]                                                                                                  ; padio            ;
+; |CPU_8bit|PC[4]                                                                                               ; |CPU_8bit|PC[4]                                                                                                  ; padio            ;
+; |CPU_8bit|PC[3]                                                                                               ; |CPU_8bit|PC[3]                                                                                                  ; padio            ;
+; |CPU_8bit|PC[2]                                                                                               ; |CPU_8bit|PC[2]                                                                                                  ; padio            ;
+; |CPU_8bit|PC[1]                                                                                               ; |CPU_8bit|PC[1]                                                                                                  ; padio            ;
+; |CPU_8bit|PC[0]                                                                                               ; |CPU_8bit|PC[0]                                                                                                  ; padio            ;
+; |CPU_8bit|clk2                                                                                                ; |CPU_8bit|clk2~corein                                                                                            ; combout          ;
+; |CPU_8bit|address[0]                                                                                          ; |CPU_8bit|address[0]~corein                                                                                      ; combout          ;
+; |CPU_8bit|address[1]                                                                                          ; |CPU_8bit|address[1]~corein                                                                                      ; combout          ;
+; |CPU_8bit|address[2]                                                                                          ; |CPU_8bit|address[2]~corein                                                                                      ; combout          ;
+; |CPU_8bit|address[3]                                                                                          ; |CPU_8bit|address[3]~corein                                                                                      ; combout          ;
+; |CPU_8bit|address[4]                                                                                          ; |CPU_8bit|address[4]~corein                                                                                      ; combout          ;
+; |CPU_8bit|address[5]                                                                                          ; |CPU_8bit|address[5]~corein                                                                                      ; combout          ;
+; |CPU_8bit|clk                                                                                                 ; |CPU_8bit|clk~corein                                                                                             ; combout          ;
+; |CPU_8bit|clk~clkctrl                                                                                         ; |CPU_8bit|clk~clkctrl                                                                                            ; outclk           ;
+; |CPU_8bit|clk2~clkctrl                                                                                        ; |CPU_8bit|clk2~clkctrl                                                                                           ; outclk           ;
++---------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                                                       ;
++--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                    ; Output Port Name                                                                                             ; Output Port Type ;
++--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+------------------+
+; |CPU_8bit|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|ram_block1a0         ; |CPU_8bit|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|q_a[6]               ; portadataout6    ;
+; |CPU_8bit|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|ram_block1a0         ; |CPU_8bit|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|q_a[7]               ; portadataout7    ;
+; |CPU_8bit|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[6]                                                    ; |CPU_8bit|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[6]                                                    ; regout           ;
+; |CPU_8bit|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[6]                                                    ; |CPU_8bit|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[6]                                                    ; regout           ;
+; |CPU_8bit|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[7]                                                    ; |CPU_8bit|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[7]                                                    ; regout           ;
+; |CPU_8bit|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[7]                                                    ; |CPU_8bit|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[7]                                                    ; regout           ;
+; |CPU_8bit|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[5]                                                    ; |CPU_8bit|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[5]                                                    ; regout           ;
+; |CPU_8bit|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[4]                                                    ; |CPU_8bit|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[4]                                                    ; regout           ;
+; |CPU_8bit|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[3]                                                    ; |CPU_8bit|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[3]                                                    ; regout           ;
+; |CPU_8bit|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[2]                                                    ; |CPU_8bit|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[2]                                                    ; regout           ;
+; |CPU_8bit|alu_16:inst|74181:inst|48~0                                                                        ; |CPU_8bit|alu_16:inst|74181:inst|48~0                                                                        ; combout          ;
+; |CPU_8bit|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[0]                                                    ; |CPU_8bit|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[0]                                                    ; regout           ;
+; |CPU_8bit|alu_16:inst|74181:inst|46~0                                                                        ; |CPU_8bit|alu_16:inst|74181:inst|46~0                                                                        ; combout          ;
+; |CPU_8bit|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[1]                                                    ; |CPU_8bit|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[1]                                                    ; regout           ;
+; |CPU_8bit|alu_16:inst|74181:inst11|46~0                                                                      ; |CPU_8bit|alu_16:inst|74181:inst11|46~0                                                                      ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst11|48~0                                                                      ; |CPU_8bit|alu_16:inst|74181:inst11|48~0                                                                      ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|aclr_actual         ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|aclr_actual         ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[5]~6   ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[5]~6   ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[4]~7   ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[4]~7   ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[3]~8   ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[3]~8   ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[2]~9   ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[2]~9   ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[1]~10  ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[1]~10  ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[0]~11  ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[0]~11  ; combout          ;
+; |CPU_8bit|S[7]                                                                                               ; |CPU_8bit|S[7]                                                                                               ; padio            ;
+; |CPU_8bit|S[6]                                                                                               ; |CPU_8bit|S[6]                                                                                               ; padio            ;
+; |CPU_8bit|jump_address[5]                                                                                    ; |CPU_8bit|jump_address[5]~corein                                                                             ; combout          ;
+; |CPU_8bit|aload                                                                                              ; |CPU_8bit|aload~corein                                                                                       ; combout          ;
+; |CPU_8bit|clear                                                                                              ; |CPU_8bit|clear~corein                                                                                       ; combout          ;
+; |CPU_8bit|jump_address[4]                                                                                    ; |CPU_8bit|jump_address[4]~corein                                                                             ; combout          ;
+; |CPU_8bit|jump_address[3]                                                                                    ; |CPU_8bit|jump_address[3]~corein                                                                             ; combout          ;
+; |CPU_8bit|jump_address[2]                                                                                    ; |CPU_8bit|jump_address[2]~corein                                                                             ; combout          ;
+; |CPU_8bit|jump_address[1]                                                                                    ; |CPU_8bit|jump_address[1]~corein                                                                             ; combout          ;
+; |CPU_8bit|jump_address[0]                                                                                    ; |CPU_8bit|jump_address[0]~corein                                                                             ; combout          ;
+; |CPU_8bit|write                                                                                              ; |CPU_8bit|write~corein                                                                                       ; combout          ;
+; |CPU_8bit|A[6]                                                                                               ; |CPU_8bit|A[6]~corein                                                                                        ; combout          ;
+; |CPU_8bit|B[6]                                                                                               ; |CPU_8bit|B[6]~corein                                                                                        ; combout          ;
+; |CPU_8bit|A[7]                                                                                               ; |CPU_8bit|A[7]~corein                                                                                        ; combout          ;
+; |CPU_8bit|B[7]                                                                                               ; |CPU_8bit|B[7]~corein                                                                                        ; combout          ;
+; |CPU_8bit|A[5]                                                                                               ; |CPU_8bit|A[5]~corein                                                                                        ; combout          ;
+; |CPU_8bit|B[5]                                                                                               ; |CPU_8bit|B[5]~corein                                                                                        ; combout          ;
+; |CPU_8bit|A[4]                                                                                               ; |CPU_8bit|A[4]~corein                                                                                        ; combout          ;
+; |CPU_8bit|B[4]                                                                                               ; |CPU_8bit|B[4]~corein                                                                                        ; combout          ;
+; |CPU_8bit|A[3]                                                                                               ; |CPU_8bit|A[3]~corein                                                                                        ; combout          ;
+; |CPU_8bit|B[3]                                                                                               ; |CPU_8bit|B[3]~corein                                                                                        ; combout          ;
+; |CPU_8bit|A[2]                                                                                               ; |CPU_8bit|A[2]~corein                                                                                        ; combout          ;
+; |CPU_8bit|B[2]                                                                                               ; |CPU_8bit|B[2]~corein                                                                                        ; combout          ;
+; |CPU_8bit|A[0]                                                                                               ; |CPU_8bit|A[0]~corein                                                                                        ; combout          ;
+; |CPU_8bit|B[0]                                                                                               ; |CPU_8bit|B[0]~corein                                                                                        ; combout          ;
+; |CPU_8bit|A[1]                                                                                               ; |CPU_8bit|A[1]~corein                                                                                        ; combout          ;
+; |CPU_8bit|B[1]                                                                                               ; |CPU_8bit|B[1]~corein                                                                                        ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|aclr_actual~clkctrl ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|aclr_actual~clkctrl ; outclk           ;
+; |CPU_8bit|aload~clkctrl                                                                                      ; |CPU_8bit|aload~clkctrl                                                                                      ; outclk           ;
++--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                                     ;
++-------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                   ; Output Port Name                                                                                            ; Output Port Type ;
++-------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+------------------+
+; |CPU_8bit|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|ram_block1a0        ; |CPU_8bit|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|q_a[4]              ; portadataout4    ;
+; |CPU_8bit|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|ram_block1a0        ; |CPU_8bit|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|q_a[6]              ; portadataout6    ;
+; |CPU_8bit|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|ram_block1a0        ; |CPU_8bit|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|q_a[7]              ; portadataout7    ;
+; |CPU_8bit|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[6]                                                   ; |CPU_8bit|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[6]                                                   ; regout           ;
+; |CPU_8bit|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[6]                                                   ; |CPU_8bit|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[6]                                                   ; regout           ;
+; |CPU_8bit|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[7]                                                   ; |CPU_8bit|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[7]                                                   ; regout           ;
+; |CPU_8bit|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[7]                                                   ; |CPU_8bit|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[7]                                                   ; regout           ;
+; |CPU_8bit|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[5]                                                   ; |CPU_8bit|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[5]                                                   ; regout           ;
+; |CPU_8bit|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[5]                                                   ; |CPU_8bit|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[5]                                                   ; regout           ;
+; |CPU_8bit|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[4]                                                   ; |CPU_8bit|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[4]                                                   ; regout           ;
+; |CPU_8bit|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[4]                                                   ; |CPU_8bit|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[4]                                                   ; regout           ;
+; |CPU_8bit|alu_16:inst|74181:inst11|44~0                                                                     ; |CPU_8bit|alu_16:inst|74181:inst11|44~0                                                                     ; combout          ;
+; |CPU_8bit|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[3]                                                   ; |CPU_8bit|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[3]                                                   ; regout           ;
+; |CPU_8bit|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[3]                                                   ; |CPU_8bit|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[3]                                                   ; regout           ;
+; |CPU_8bit|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[2]                                                   ; |CPU_8bit|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[2]                                                   ; regout           ;
+; |CPU_8bit|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[2]                                                   ; |CPU_8bit|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[2]                                                   ; regout           ;
+; |CPU_8bit|alu_16:inst|74181:inst|51~0                                                                       ; |CPU_8bit|alu_16:inst|74181:inst|51~0                                                                       ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst|48~0                                                                       ; |CPU_8bit|alu_16:inst|74181:inst|48~0                                                                       ; combout          ;
+; |CPU_8bit|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[0]                                                   ; |CPU_8bit|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[0]                                                   ; regout           ;
+; |CPU_8bit|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[0]                                                   ; |CPU_8bit|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[0]                                                   ; regout           ;
+; |CPU_8bit|alu_16:inst|74181:inst|46~0                                                                       ; |CPU_8bit|alu_16:inst|74181:inst|46~0                                                                       ; combout          ;
+; |CPU_8bit|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[1]                                                   ; |CPU_8bit|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[1]                                                   ; regout           ;
+; |CPU_8bit|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[1]                                                   ; |CPU_8bit|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[1]                                                   ; regout           ;
+; |CPU_8bit|alu_16:inst|74181:inst|44~0                                                                       ; |CPU_8bit|alu_16:inst|74181:inst|44~0                                                                       ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst11|46~0                                                                     ; |CPU_8bit|alu_16:inst|74181:inst11|46~0                                                                     ; combout          ;
+; |CPU_8bit|alu_16:inst|74181:inst11|48~0                                                                     ; |CPU_8bit|alu_16:inst|74181:inst11|48~0                                                                     ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[5]~6  ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[5]~6  ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[4]~7  ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[4]~7  ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[3]~8  ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[3]~8  ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[2]~9  ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[2]~9  ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[1]~10 ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[1]~10 ; combout          ;
+; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[0]~11 ; |CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[0]~11 ; combout          ;
+; |CPU_8bit|S[7]                                                                                              ; |CPU_8bit|S[7]                                                                                              ; padio            ;
+; |CPU_8bit|S[6]                                                                                              ; |CPU_8bit|S[6]                                                                                              ; padio            ;
+; |CPU_8bit|S[4]                                                                                              ; |CPU_8bit|S[4]                                                                                              ; padio            ;
+; |CPU_8bit|jump_address[5]                                                                                   ; |CPU_8bit|jump_address[5]~corein                                                                            ; combout          ;
+; |CPU_8bit|clear                                                                                             ; |CPU_8bit|clear~corein                                                                                      ; combout          ;
+; |CPU_8bit|jump_address[4]                                                                                   ; |CPU_8bit|jump_address[4]~corein                                                                            ; combout          ;
+; |CPU_8bit|jump_address[3]                                                                                   ; |CPU_8bit|jump_address[3]~corein                                                                            ; combout          ;
+; |CPU_8bit|jump_address[2]                                                                                   ; |CPU_8bit|jump_address[2]~corein                                                                            ; combout          ;
+; |CPU_8bit|jump_address[1]                                                                                   ; |CPU_8bit|jump_address[1]~corein                                                                            ; combout          ;
+; |CPU_8bit|jump_address[0]                                                                                   ; |CPU_8bit|jump_address[0]~corein                                                                            ; combout          ;
+; |CPU_8bit|A[6]                                                                                              ; |CPU_8bit|A[6]~corein                                                                                       ; combout          ;
+; |CPU_8bit|B[6]                                                                                              ; |CPU_8bit|B[6]~corein                                                                                       ; combout          ;
+; |CPU_8bit|A[7]                                                                                              ; |CPU_8bit|A[7]~corein                                                                                       ; combout          ;
+; |CPU_8bit|B[7]                                                                                              ; |CPU_8bit|B[7]~corein                                                                                       ; combout          ;
+; |CPU_8bit|A[5]                                                                                              ; |CPU_8bit|A[5]~corein                                                                                       ; combout          ;
+; |CPU_8bit|B[5]                                                                                              ; |CPU_8bit|B[5]~corein                                                                                       ; combout          ;
+; |CPU_8bit|A[4]                                                                                              ; |CPU_8bit|A[4]~corein                                                                                       ; combout          ;
+; |CPU_8bit|B[4]                                                                                              ; |CPU_8bit|B[4]~corein                                                                                       ; combout          ;
+; |CPU_8bit|A[3]                                                                                              ; |CPU_8bit|A[3]~corein                                                                                       ; combout          ;
+; |CPU_8bit|B[3]                                                                                              ; |CPU_8bit|B[3]~corein                                                                                       ; combout          ;
+; |CPU_8bit|A[2]                                                                                              ; |CPU_8bit|A[2]~corein                                                                                       ; combout          ;
+; |CPU_8bit|B[2]                                                                                              ; |CPU_8bit|B[2]~corein                                                                                       ; combout          ;
+; |CPU_8bit|A[0]                                                                                              ; |CPU_8bit|A[0]~corein                                                                                       ; combout          ;
+; |CPU_8bit|B[0]                                                                                              ; |CPU_8bit|B[0]~corein                                                                                       ; combout          ;
+; |CPU_8bit|A[1]                                                                                              ; |CPU_8bit|A[1]~corein                                                                                       ; combout          ;
+; |CPU_8bit|B[1]                                                                                              ; |CPU_8bit|B[1]~corein                                                                                       ; combout          ;
++-------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Tue Jun 06 11:40:16 2023
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off CPU_8bit -c CPU_8bit
+Warning: Tcl Script File xuanxiu8z/lpm_sub.qip not found
+    Info: set_global_assignment -name QIP_FILE xuanxiu8z/lpm_sub.qip
+Warning: Tcl Script File xuanxiu8z/lpm_divede.qip not found
+    Info: set_global_assignment -name QIP_FILE xuanxiu8z/lpm_divede.qip
+Info: Using vector source file "G:/mywork/CPU_8/CPU_8bit/counter16.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      61.11 %
+Info: Number of transitions in simulation is 4139
+Info: Quartus II Simulator was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 160 megabytes
+    Info: Processing ended: Tue Jun 06 11:40:18 2023
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

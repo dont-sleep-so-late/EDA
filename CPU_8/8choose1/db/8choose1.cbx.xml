@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="8choose1">
+		<CBX_INST_ENTRY INSTANCE_NAME="|8choose1|AdivideB:inst4|lpm_divide:lpm_divide_component" CBX_FILE_NAME="lpm_divide_krp.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|8choose1|mux0:inst|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_f3e.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

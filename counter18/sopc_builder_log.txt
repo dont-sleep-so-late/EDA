@@ -1,0 +1,9 @@
+Exception in thread "main" java.awt.AWTError: Assistive Technology not found: com.sun.java.accessibility.AccessBridge
+	at java.awt.Toolkit.loadAssistiveTechnologies(Unknown Source)
+	at java.awt.Toolkit.getDefaultToolkit(Unknown Source)
+	at javax.swing.UIManager.<clinit>(Unknown Source)
+	at com.altera.sopceditor.app.EnsembleApp.initializeUi(EnsembleApp.java:205)
+	at com.altera.sopceditor.app.SopcEditor.initializeUi(SopcEditor.java:942)
+	at com.altera.sopceditor.app.SopcEditor.runGui(SopcEditor.java:884)
+	at com.altera.sopceditor.app.SopcEditor.start(SopcEditor.java:193)
+	at com.altera.sopceditor.app.SopcEditor.main(SopcEditor.java:140)

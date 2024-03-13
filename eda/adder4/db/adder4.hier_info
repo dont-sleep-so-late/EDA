@@ -1,0 +1,121 @@
+|adder4
+Cout <= fulladder:inst.Co
+A[0] => fulladder:inst3.A
+A[1] => fulladder:inst1.A
+A[2] => fulladder:inst2.A
+A[3] => fulladder:inst.A
+B[0] => fulladder:inst3.B
+B[1] => fulladder:inst1.B
+B[2] => fulladder:inst2.B
+B[3] => fulladder:inst.B
+Cin => fulladder:inst3.Cin
+S[0] <= fulladder:inst3.S
+S[1] <= fulladder:inst1.S
+S[2] <= fulladder:inst2.S
+S[3] <= fulladder:inst.S
+
+
+|adder4|fulladder:inst
+S <= halfadder:inst1.S
+A => halfadder:inst.A
+B => halfadder:inst.B
+Cin => halfadder:inst1.B
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder4|fulladder:inst|halfadder:inst1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst1.IN1
+CO <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder4|fulladder:inst|halfadder:inst
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst1.IN1
+CO <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder4|fulladder:inst2
+S <= halfadder:inst1.S
+A => halfadder:inst.A
+B => halfadder:inst.B
+Cin => halfadder:inst1.B
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder4|fulladder:inst2|halfadder:inst1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst1.IN1
+CO <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder4|fulladder:inst2|halfadder:inst
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst1.IN1
+CO <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder4|fulladder:inst1
+S <= halfadder:inst1.S
+A => halfadder:inst.A
+B => halfadder:inst.B
+Cin => halfadder:inst1.B
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder4|fulladder:inst1|halfadder:inst1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst1.IN1
+CO <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder4|fulladder:inst1|halfadder:inst
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst1.IN1
+CO <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder4|fulladder:inst3
+S <= halfadder:inst1.S
+A => halfadder:inst.A
+B => halfadder:inst.B
+Cin => halfadder:inst1.B
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder4|fulladder:inst3|halfadder:inst1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst1.IN1
+CO <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder4|fulladder:inst3|halfadder:inst
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst1.IN1
+CO <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+

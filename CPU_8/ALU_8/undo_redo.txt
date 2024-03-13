@@ -1,0 +1,8 @@
+GED
+
+	Undo Commands
+	     1.	Resize
+	     2.	Delete
+	     3.	Delete Insert
+
+

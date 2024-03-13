@@ -1,0 +1,99 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.1 Build 222 10/21/2009 SJ Web Edition
+# Date created = 18:02:04  September 17, 2022
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		CPU_8bit_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C35F672C6
+set_global_assignment -name TOP_LEVEL_ENTITY CPU_8bit
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:02:04  SEPTEMBER 17, 2022"
+set_global_assignment -name LAST_QUARTUS_VERSION 9.1
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 672
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 6
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name SIMULATION_MODE TIMING
+set_global_assignment -name BDF_FILE ALU_8.bdf
+set_global_assignment -name BDF_FILE Block1.bdf
+set_global_assignment -name SOURCE_FILE lpm_counter128.cmp
+set_global_assignment -name BDF_FILE xuanxiu8z/xor16y/xor16y.bdf
+set_global_assignment -name BDF_FILE xuanxiu8z/xnor16/xnor16.bdf
+set_global_assignment -name BDF_FILE xuanxiu8z/or16/or16.bdf
+set_global_assignment -name BDF_FILE xuanxiu8z/nor16/nor16.bdf
+set_global_assignment -name BDF_FILE xuanxiu8z/8and.bdf
+set_global_assignment -name BDF_FILE xuanxiu8z/8weiand/8and.bdf
+set_global_assignment -name BDF_FILE xuanxiu8z/nor16.bdf
+set_global_assignment -name BDF_FILE xuanxiu8z/or16.bdf
+set_global_assignment -name BDF_FILE xuanxiu8z/xnor16.bdf
+set_global_assignment -name BDF_FILE xuanxiu8z/xor16y.bdf
+set_global_assignment -name BDF_FILE xuanxiu8z/ALU_8.bdf
+set_global_assignment -name SDC_FILE CPU_8bit.sdc
+set_global_assignment -name BDF_FILE 8choose1/logic_fA+B/logic_fA+B.bdf
+set_global_assignment -name BDF_FILE 8choose1/logic_yiAaddB/logic_yiAaddB.bdf
+set_global_assignment -name BDF_FILE 8choose1/logic_fA+B/logic_fAaddB.bdf
+set_global_assignment -name BDF_FILE 8choose1/logic_AB/logic_AB.bdf
+set_global_assignment -name BDF_FILE 8choose1/logic_A+B/logic_AaddB.bdf
+set_global_assignment -name BDF_FILE 8choose1/AxB/AB.bdf
+set_global_assignment -name BDF_FILE "8choose1/A-B/AsubB.bdf"
+set_global_assignment -name BDF_FILE 8choose1/A+B/AaddB.bdf
+set_global_assignment -name BDF_FILE 8choose1/8choose1.bdf
+set_global_assignment -name VHDL_FILE AdivideB.vhd
+set_global_assignment -name BDF_FILE CPU_8bit.bdf
+set_global_assignment -name VHDL_FILE lpm_dff0.vhd
+set_global_assignment -name VHDL_FILE lpm_latch0.vhd
+set_global_assignment -name VHDL_FILE lpm_ram_dq0.vhd
+set_global_assignment -name VHDL_FILE lpm_rom0.vhd
+set_global_assignment -name VHDL_FILE mux0.vhd
+set_global_assignment -name QIP_FILE lpm_add_sub0.qip
+set_global_assignment -name QIP_FILE xuanxiu8z/lpm_sub.qip
+set_global_assignment -name QIP_FILE xuanxiu8z/lpm_divede.qip
+set_global_assignment -name QIP_FILE lpm_counter128.qip
+set_global_assignment -name BDF_FILE CPU_8bit_stock.bdf
+set_global_assignment -name MIF_FILE counter16.mif
+set_global_assignment -name MIF_FILE counter48.mif
+set_global_assignment -name VECTOR_WAVEFORM_FILE counter16.vwf
+set_global_assignment -name MIF_FILE counter64.mif
+set_global_assignment -name MIF_FILE counter64S.mif
+set_global_assignment -name MIF_FILE counter64SS.mif
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE counter16.vwf

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed May 24 20:27:21 2023
+Quartus II Version : 9.1 Build 222 10/21/2009 SJ Web Edition
+Revision Name : timeCounter
+Top-level Entity Name : timeCounter
+Family : Cyclone II
+Total logic elements : 55
+    Total combinational functions : 55
+    Dedicated logic registers : 24
+Total registers : 24
+Total pins : 26
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="counter18">
+		<CBX_INST_ENTRY INSTANCE_NAME="|counter18|ct10:inst1|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_dik.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|counter18|ct10:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_dik.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

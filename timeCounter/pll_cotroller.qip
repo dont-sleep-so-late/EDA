@@ -1,0 +1,8 @@
+set_global_assignment -name IP_TOOL_NAME "ALTPLL"
+set_global_assignment -name IP_TOOL_VERSION "9.1"
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "pll_cotroller.v"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "pll_cotroller.bsf"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "pll_cotroller_inst.v"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "pll_cotroller_bb.v"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "pll_cotroller.inc"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "pll_cotroller.ppf"]

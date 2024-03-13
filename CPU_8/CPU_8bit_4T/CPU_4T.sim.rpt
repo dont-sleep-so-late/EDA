@@ -1,0 +1,757 @@
+Simulator report for CPU_4T
+Wed Jun 14 15:47:34 2023
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|ALTSYNCRAM
+  6. |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|ALTSYNCRAM
+  7. Coverage Summary
+  8. Complete 1/0-Value Coverage
+  9. Missing 1-Value Coverage
+ 10. Missing 0-Value Coverage
+ 11. Simulator INI Usage
+ 12. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 2.0 us       ;
+; Simulation Netlist Size     ; 289 nodes    ;
+; Simulation Coverage         ;       6.80 % ;
+; Total Number of Transitions ; 1446         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                         ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+; Option                                                                                     ; Setting       ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+; Simulation mode                                                                            ; Functional    ; Timing        ;
+; Start time                                                                                 ; 0 ns          ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF          ;               ;
+; Vector input source                                                                        ; CPU_4T.vwf    ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On            ; On            ;
+; Check outputs                                                                              ; Off           ; Off           ;
+; Report simulation coverage                                                                 ; On            ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On            ; On            ;
+; Display missing 1-value coverage report                                                    ; On            ; On            ;
+; Display missing 0-value coverage report                                                    ; On            ; On            ;
+; Detect setup and hold time violations                                                      ; Off           ; Off           ;
+; Detect glitches                                                                            ; Off           ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off           ; Off           ;
+; Generate Signal Activity File                                                              ; Off           ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off           ; Off           ;
+; Group bus channels in simulation results                                                   ; Off           ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On            ; On            ;
+; Trigger vector comparison with the specified mode                                          ; SELECTED_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off           ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off           ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto          ; Auto          ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------------------------------------+
+; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|ALTSYNCRAM ;
++--------------------------------------------------------------------------------------------------+
+Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
+
+
++-----------------------------------------------------------------------------------------------------+
+; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|ALTSYNCRAM ;
++-----------------------------------------------------------------------------------------------------+
+Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       6.80 % ;
+; Total nodes checked                                 ; 289          ;
+; Total output ports checked                          ; 294          ;
+; Total output ports with complete 1/0-value coverage ; 20           ;
+; Total output ports with no 1/0-value coverage       ; 257          ;
+; Total output ports with no 1-value coverage         ; 262          ;
+; Total output ports with no 0-value coverage         ; 269          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                                ;
++-------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                   ; Output Port Name                                                                                          ; Output Port Type ;
++-------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
+; |CPU_4T|T1                                                                                                  ; |CPU_4T|T1                                                                                                ; pin_out          ;
+; |CPU_4T|START                                                                                               ; |CPU_4T|START                                                                                             ; out              ;
+; |CPU_4T|CLK                                                                                                 ; |CPU_4T|CLK                                                                                               ; out              ;
+; |CPU_4T|T2                                                                                                  ; |CPU_4T|T2                                                                                                ; pin_out          ;
+; |CPU_4T|T3                                                                                                  ; |CPU_4T|T3                                                                                                ; pin_out          ;
+; |CPU_4T|T4                                                                                                  ; |CPU_4T|T4                                                                                                ; pin_out          ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita0   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita0 ; combout          ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_reg_bit1a[0] ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_hazard[0]      ; regout           ;
+; |CPU_4T|CPU_4T_Final:inst2|inst1                                                                            ; |CPU_4T|CPU_4T_Final:inst2|inst1                                                                          ; out0             ;
+; |CPU_4T|CPU_4T_Final:inst2|inst2                                                                            ; |CPU_4T|CPU_4T_Final:inst2|inst2                                                                          ; out0             ;
+; |CPU_4T|CPU_4T_Final:inst2|inst3                                                                            ; |CPU_4T|CPU_4T_Final:inst2|inst3                                                                          ; out0             ;
+; |CPU_4T|CPU_4T_Final:inst2|inst4                                                                            ; |CPU_4T|CPU_4T_Final:inst2|inst4                                                                          ; out0             ;
+; |CPU_4T|CPU_4T_Final:inst2|CPU_4T_origin:inst|inst                                                          ; |CPU_4T|CPU_4T_Final:inst2|CPU_4T_origin:inst|inst                                                        ; regout           ;
+; |CPU_4T|CPU_4T_Final:inst2|CPU_4T_origin:inst|inst9                                                         ; |CPU_4T|CPU_4T_Final:inst2|CPU_4T_origin:inst|inst9                                                       ; out0             ;
+; |CPU_4T|CPU_4T_Final:inst2|CPU_4T_origin:inst|inst6                                                         ; |CPU_4T|CPU_4T_Final:inst2|CPU_4T_origin:inst|inst6                                                       ; regout           ;
+; |CPU_4T|CPU_4T_Final:inst2|CPU_4T_origin:inst|inst5                                                         ; |CPU_4T|CPU_4T_Final:inst2|CPU_4T_origin:inst|inst5                                                       ; regout           ;
+; |CPU_4T|CPU_4T_Final:inst2|CPU_4T_origin:inst|inst11                                                        ; |CPU_4T|CPU_4T_Final:inst2|CPU_4T_origin:inst|inst11                                                      ; out0             ;
+; |CPU_4T|CPU_4T_Final:inst2|CPU_4T_origin:inst|inst4                                                         ; |CPU_4T|CPU_4T_Final:inst2|CPU_4T_origin:inst|inst4                                                       ; regout           ;
+; |CPU_4T|CPU_4T_Final:inst2|CPU_4T_origin:inst|inst10                                                        ; |CPU_4T|CPU_4T_Final:inst2|CPU_4T_origin:inst|inst10                                                      ; out0             ;
+; |CPU_4T|CPU_4T_Final:inst2|CPU_4T_origin:inst|inst15                                                        ; |CPU_4T|CPU_4T_Final:inst2|CPU_4T_origin:inst|inst15                                                      ; out0             ;
++-------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                                                        ;
++-------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                   ; Output Port Name                                                                                               ; Output Port Type ;
++-------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
+; |CPU_4T|STOP                                                                                                ; |CPU_4T|STOP                                                                                                   ; out              ;
+; |CPU_4T|cout[7]                                                                                             ; |CPU_4T|cout[7]                                                                                                ; pin_out          ;
+; |CPU_4T|cout[6]                                                                                             ; |CPU_4T|cout[6]                                                                                                ; pin_out          ;
+; |CPU_4T|cout[5]                                                                                             ; |CPU_4T|cout[5]                                                                                                ; pin_out          ;
+; |CPU_4T|cout[4]                                                                                             ; |CPU_4T|cout[4]                                                                                                ; pin_out          ;
+; |CPU_4T|cout[3]                                                                                             ; |CPU_4T|cout[3]                                                                                                ; pin_out          ;
+; |CPU_4T|cout[2]                                                                                             ; |CPU_4T|cout[2]                                                                                                ; pin_out          ;
+; |CPU_4T|cout[1]                                                                                             ; |CPU_4T|cout[1]                                                                                                ; pin_out          ;
+; |CPU_4T|cout[0]                                                                                             ; |CPU_4T|cout[0]                                                                                                ; pin_out          ;
+; |CPU_4T|write                                                                                               ; |CPU_4T|write                                                                                                  ; out              ;
+; |CPU_4T|address[5]                                                                                          ; |CPU_4T|address[5]                                                                                             ; out              ;
+; |CPU_4T|address[4]                                                                                          ; |CPU_4T|address[4]                                                                                             ; out              ;
+; |CPU_4T|address[3]                                                                                          ; |CPU_4T|address[3]                                                                                             ; out              ;
+; |CPU_4T|address[2]                                                                                          ; |CPU_4T|address[2]                                                                                             ; out              ;
+; |CPU_4T|address[1]                                                                                          ; |CPU_4T|address[1]                                                                                             ; out              ;
+; |CPU_4T|address[0]                                                                                          ; |CPU_4T|address[0]                                                                                             ; out              ;
+; |CPU_4T|S[7]                                                                                                ; |CPU_4T|S[7]                                                                                                   ; pin_out          ;
+; |CPU_4T|S[6]                                                                                                ; |CPU_4T|S[6]                                                                                                   ; pin_out          ;
+; |CPU_4T|S[4]                                                                                                ; |CPU_4T|S[4]                                                                                                   ; pin_out          ;
+; |CPU_4T|S[3]                                                                                                ; |CPU_4T|S[3]                                                                                                   ; pin_out          ;
+; |CPU_4T|S[2]                                                                                                ; |CPU_4T|S[2]                                                                                                   ; pin_out          ;
+; |CPU_4T|S[1]                                                                                                ; |CPU_4T|S[1]                                                                                                   ; pin_out          ;
+; |CPU_4T|S[0]                                                                                                ; |CPU_4T|S[0]                                                                                                   ; pin_out          ;
+; |CPU_4T|PC[5]                                                                                               ; |CPU_4T|PC[5]                                                                                                  ; pin_out          ;
+; |CPU_4T|PC[4]                                                                                               ; |CPU_4T|PC[4]                                                                                                  ; pin_out          ;
+; |CPU_4T|PC[3]                                                                                               ; |CPU_4T|PC[3]                                                                                                  ; pin_out          ;
+; |CPU_4T|PC[2]                                                                                               ; |CPU_4T|PC[2]                                                                                                  ; pin_out          ;
+; |CPU_4T|PC[1]                                                                                               ; |CPU_4T|PC[1]                                                                                                  ; pin_out          ;
+; |CPU_4T|PC[0]                                                                                               ; |CPU_4T|PC[0]                                                                                                  ; pin_out          ;
+; |CPU_4T|clear                                                                                               ; |CPU_4T|clear                                                                                                  ; out              ;
+; |CPU_4T|aload                                                                                               ; |CPU_4T|aload                                                                                                  ; out              ;
+; |CPU_4T|jump_address[5]                                                                                     ; |CPU_4T|jump_address[5]                                                                                        ; out              ;
+; |CPU_4T|jump_address[4]                                                                                     ; |CPU_4T|jump_address[4]                                                                                        ; out              ;
+; |CPU_4T|jump_address[3]                                                                                     ; |CPU_4T|jump_address[3]                                                                                        ; out              ;
+; |CPU_4T|jump_address[2]                                                                                     ; |CPU_4T|jump_address[2]                                                                                        ; out              ;
+; |CPU_4T|jump_address[1]                                                                                     ; |CPU_4T|jump_address[1]                                                                                        ; out              ;
+; |CPU_4T|jump_address[0]                                                                                     ; |CPU_4T|jump_address[0]                                                                                        ; out              ;
+; |CPU_4T|A[7]                                                                                                ; |CPU_4T|A[7]                                                                                                   ; out              ;
+; |CPU_4T|A[6]                                                                                                ; |CPU_4T|A[6]                                                                                                   ; out              ;
+; |CPU_4T|A[5]                                                                                                ; |CPU_4T|A[5]                                                                                                   ; out              ;
+; |CPU_4T|A[4]                                                                                                ; |CPU_4T|A[4]                                                                                                   ; out              ;
+; |CPU_4T|A[3]                                                                                                ; |CPU_4T|A[3]                                                                                                   ; out              ;
+; |CPU_4T|A[2]                                                                                                ; |CPU_4T|A[2]                                                                                                   ; out              ;
+; |CPU_4T|A[1]                                                                                                ; |CPU_4T|A[1]                                                                                                   ; out              ;
+; |CPU_4T|A[0]                                                                                                ; |CPU_4T|A[0]                                                                                                   ; out              ;
+; |CPU_4T|B[7]                                                                                                ; |CPU_4T|B[7]                                                                                                   ; out              ;
+; |CPU_4T|B[6]                                                                                                ; |CPU_4T|B[6]                                                                                                   ; out              ;
+; |CPU_4T|B[5]                                                                                                ; |CPU_4T|B[5]                                                                                                   ; out              ;
+; |CPU_4T|B[4]                                                                                                ; |CPU_4T|B[4]                                                                                                   ; out              ;
+; |CPU_4T|B[3]                                                                                                ; |CPU_4T|B[3]                                                                                                   ; out              ;
+; |CPU_4T|B[2]                                                                                                ; |CPU_4T|B[2]                                                                                                   ; out              ;
+; |CPU_4T|B[1]                                                                                                ; |CPU_4T|B[1]                                                                                                   ; out              ;
+; |CPU_4T|B[0]                                                                                                ; |CPU_4T|B[0]                                                                                                   ; out              ;
+; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[7]                                                     ; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[7]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[6]                                                     ; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[6]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[5]                                                     ; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[5]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[4]                                                     ; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[4]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[3]                                                     ; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[3]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[2]                                                     ; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[2]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[1]                                                     ; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[1]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[0]                                                     ; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[0]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[7]                                                     ; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[7]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[6]                                                     ; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[6]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[5]                                                     ; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[5]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[4]                                                     ; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[4]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[3]                                                     ; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[3]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[2]                                                     ; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[2]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[1]                                                     ; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[1]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[0]                                                     ; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[0]                                                        ; regout           ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|aclr_actual          ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|aclr_actual             ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~51                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~51                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~52                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~52                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~53                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~53                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~54                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~54                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~55                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~55                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~56                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~56                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_clrn[5]~0  ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_clrn[5]~0     ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_clrn[4]~1  ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_clrn[4]~1     ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_clrn[3]~2  ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_clrn[3]~2     ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_clrn[2]~3  ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_clrn[2]~3     ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_clrn[1]~4  ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_clrn[1]~4     ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_clrn[0]~5  ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_clrn[0]~5     ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_prn[5]~0   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_prn[5]~0      ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_prn[4]~1   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_prn[4]~1      ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_prn[3]~2   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_prn[3]~2      ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_prn[2]~3   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_prn[2]~3      ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_prn[1]~4   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_prn[1]~4      ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_prn[0]~5   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_prn[0]~5      ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[5]      ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[5]         ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[4]      ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[4]         ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[3]      ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[3]         ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[2]      ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[2]         ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[1]      ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[1]         ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[0]      ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[0]         ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_latch_signal[5]  ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_latch_signal[5]     ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_latch_signal[4]  ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_latch_signal[4]     ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_latch_signal[3]  ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_latch_signal[3]     ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_latch_signal[2]  ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_latch_signal[2]     ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_latch_signal[1]  ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_latch_signal[1]     ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_latch_signal[0]  ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_latch_signal[0]     ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~58                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~58                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~59                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~59                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~60                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~60                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~61                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~61                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~62                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~62                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~63                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~63                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~64                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~64                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~65                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~65                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~66                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~66                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~67                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~67                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~68                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~68                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~69                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~69                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~82                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~82                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~83                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~83                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~84                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~84                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~85                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~85                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~86                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~86                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~87                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~87                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~88                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~88                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~89                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~89                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~90                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~90                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~91                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~91                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~92                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~92                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~93                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~93                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[5]~0          ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[5]~0             ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[4]~1          ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[4]~1             ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[3]~2          ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[3]~2             ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[2]~3          ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[2]~3             ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[1]~4          ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[1]~4             ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[0]~5          ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[0]~5             ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[5]~6          ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[5]~6             ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[4]~7          ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[4]~7             ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[3]~8          ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[3]~8             ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[2]~9          ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[2]~9             ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[1]~10         ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[1]~10            ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[0]~11         ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[0]~11            ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[5]            ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[5]               ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[4]            ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[4]               ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[3]            ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[3]               ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[2]            ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[2]               ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[1]            ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[1]               ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[0]            ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[0]               ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita0   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita0~COUT ; cout             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita1   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita1      ; combout          ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita1   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita1~COUT ; cout             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita2   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita2      ; combout          ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita2   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita2~COUT ; cout             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita3   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita3      ; combout          ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita3   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita3~COUT ; cout             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita4   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita4      ; combout          ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita4   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita4~COUT ; cout             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita5   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita5      ; combout          ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_reg_bit1a[5] ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_hazard[5]           ; regout           ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_reg_bit1a[4] ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_hazard[4]           ; regout           ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_reg_bit1a[3] ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_hazard[3]           ; regout           ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_reg_bit1a[2] ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_hazard[2]           ; regout           ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_reg_bit1a[1] ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_hazard[1]           ; regout           ;
+; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|ram_block1a0          ; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|q_a[0]                   ; portadataout0    ;
+; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|ram_block1a1          ; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|q_a[1]                   ; portadataout0    ;
+; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|ram_block1a2          ; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|q_a[2]                   ; portadataout0    ;
+; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|ram_block1a3          ; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|q_a[3]                   ; portadataout0    ;
+; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|ram_block1a4          ; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|q_a[4]                   ; portadataout0    ;
+; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|ram_block1a6          ; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|q_a[6]                   ; portadataout0    ;
+; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|ram_block1a7          ; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|q_a[7]                   ; portadataout0    ;
+; |CPU_4T|alu_16:inst|74182:inst8|23                                                                          ; |CPU_4T|alu_16:inst|74182:inst8|23                                                                             ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|81                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|81                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|54                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|54                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|47                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|47                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|14                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|14                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|13                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|13                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|44                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|44                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|11                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|11                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|12                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|12                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|79                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|79                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|66                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|66                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|46                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|46                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|9                                                                          ; |CPU_4T|alu_16:inst|74181:inst11|9                                                                             ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|8                                                                          ; |CPU_4T|alu_16:inst|74181:inst11|8                                                                             ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|65                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|65                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|43                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|43                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|6                                                                          ; |CPU_4T|alu_16:inst|74181:inst11|6                                                                             ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|7                                                                          ; |CPU_4T|alu_16:inst|74181:inst11|7                                                                             ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|77                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|77                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|56                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|56                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|52                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|52                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|24                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|24                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|23                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|23                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|51                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|51                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|21                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|21                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|22                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|22                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|74                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|74                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|73                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|73                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|48                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|48                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|19                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|19                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|18                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|18                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|72                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|72                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|71                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|71                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|70                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|70                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|45                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|45                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|16                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|16                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|17                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|17                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|82                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|82                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|55                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|55                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|75                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|75                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|67                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|67                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|68                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|68                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|69                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|69                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|80                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|80                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|53                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|53                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|64                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|64                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|81                                                                           ; |CPU_4T|alu_16:inst|74181:inst|81                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|54                                                                           ; |CPU_4T|alu_16:inst|74181:inst|54                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|47                                                                           ; |CPU_4T|alu_16:inst|74181:inst|47                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|14                                                                           ; |CPU_4T|alu_16:inst|74181:inst|14                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|13                                                                           ; |CPU_4T|alu_16:inst|74181:inst|13                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|44                                                                           ; |CPU_4T|alu_16:inst|74181:inst|44                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|11                                                                           ; |CPU_4T|alu_16:inst|74181:inst|11                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|12                                                                           ; |CPU_4T|alu_16:inst|74181:inst|12                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|46                                                                           ; |CPU_4T|alu_16:inst|74181:inst|46                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|9                                                                            ; |CPU_4T|alu_16:inst|74181:inst|9                                                                               ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|8                                                                            ; |CPU_4T|alu_16:inst|74181:inst|8                                                                               ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|65                                                                           ; |CPU_4T|alu_16:inst|74181:inst|65                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|43                                                                           ; |CPU_4T|alu_16:inst|74181:inst|43                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|6                                                                            ; |CPU_4T|alu_16:inst|74181:inst|6                                                                               ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|7                                                                            ; |CPU_4T|alu_16:inst|74181:inst|7                                                                               ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|77                                                                           ; |CPU_4T|alu_16:inst|74181:inst|77                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|56                                                                           ; |CPU_4T|alu_16:inst|74181:inst|56                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|52                                                                           ; |CPU_4T|alu_16:inst|74181:inst|52                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|24                                                                           ; |CPU_4T|alu_16:inst|74181:inst|24                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|23                                                                           ; |CPU_4T|alu_16:inst|74181:inst|23                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|51                                                                           ; |CPU_4T|alu_16:inst|74181:inst|51                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|21                                                                           ; |CPU_4T|alu_16:inst|74181:inst|21                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|22                                                                           ; |CPU_4T|alu_16:inst|74181:inst|22                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|48                                                                           ; |CPU_4T|alu_16:inst|74181:inst|48                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|19                                                                           ; |CPU_4T|alu_16:inst|74181:inst|19                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|18                                                                           ; |CPU_4T|alu_16:inst|74181:inst|18                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|72                                                                           ; |CPU_4T|alu_16:inst|74181:inst|72                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|71                                                                           ; |CPU_4T|alu_16:inst|74181:inst|71                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|70                                                                           ; |CPU_4T|alu_16:inst|74181:inst|70                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|45                                                                           ; |CPU_4T|alu_16:inst|74181:inst|45                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|16                                                                           ; |CPU_4T|alu_16:inst|74181:inst|16                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|17                                                                           ; |CPU_4T|alu_16:inst|74181:inst|17                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|82                                                                           ; |CPU_4T|alu_16:inst|74181:inst|82                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|55                                                                           ; |CPU_4T|alu_16:inst|74181:inst|55                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|67                                                                           ; |CPU_4T|alu_16:inst|74181:inst|67                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|68                                                                           ; |CPU_4T|alu_16:inst|74181:inst|68                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|80                                                                           ; |CPU_4T|alu_16:inst|74181:inst|80                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|53                                                                           ; |CPU_4T|alu_16:inst|74181:inst|53                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|60                                                                           ; |CPU_4T|alu_16:inst|74181:inst|60                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|63                                                                           ; |CPU_4T|alu_16:inst|74181:inst|63                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|58                                                                           ; |CPU_4T|alu_16:inst|74181:inst|58                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|59                                                                           ; |CPU_4T|alu_16:inst|74181:inst|59                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|62                                                                           ; |CPU_4T|alu_16:inst|74181:inst|62                                                                              ; out0             ;
+; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|ram_block1a0       ; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|q_a[0]                ; portadataout0    ;
+; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|ram_block1a1       ; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|q_a[1]                ; portadataout0    ;
+; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|ram_block1a2       ; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|q_a[2]                ; portadataout0    ;
+; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|ram_block1a3       ; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|q_a[3]                ; portadataout0    ;
+; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|ram_block1a4       ; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|q_a[4]                ; portadataout0    ;
+; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|ram_block1a5       ; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|q_a[5]                ; portadataout0    ;
+; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|ram_block1a6       ; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|q_a[6]                ; portadataout0    ;
+; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|ram_block1a7       ; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|q_a[7]                ; portadataout0    ;
+; |CPU_4T|CPU_4T_Final:inst2|inst5                                                                            ; |CPU_4T|CPU_4T_Final:inst2|inst5                                                                               ; out0             ;
++-------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                                        ;
++-------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                   ; Output Port Name                                                                                               ; Output Port Type ;
++-------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
+; |CPU_4T|STOP                                                                                                ; |CPU_4T|STOP                                                                                                   ; out              ;
+; |CPU_4T|RESET                                                                                               ; |CPU_4T|RESET                                                                                                  ; out              ;
+; |CPU_4T|cout[7]                                                                                             ; |CPU_4T|cout[7]                                                                                                ; pin_out          ;
+; |CPU_4T|cout[6]                                                                                             ; |CPU_4T|cout[6]                                                                                                ; pin_out          ;
+; |CPU_4T|cout[5]                                                                                             ; |CPU_4T|cout[5]                                                                                                ; pin_out          ;
+; |CPU_4T|cout[4]                                                                                             ; |CPU_4T|cout[4]                                                                                                ; pin_out          ;
+; |CPU_4T|cout[3]                                                                                             ; |CPU_4T|cout[3]                                                                                                ; pin_out          ;
+; |CPU_4T|cout[2]                                                                                             ; |CPU_4T|cout[2]                                                                                                ; pin_out          ;
+; |CPU_4T|cout[1]                                                                                             ; |CPU_4T|cout[1]                                                                                                ; pin_out          ;
+; |CPU_4T|cout[0]                                                                                             ; |CPU_4T|cout[0]                                                                                                ; pin_out          ;
+; |CPU_4T|write                                                                                               ; |CPU_4T|write                                                                                                  ; out              ;
+; |CPU_4T|address[5]                                                                                          ; |CPU_4T|address[5]                                                                                             ; out              ;
+; |CPU_4T|address[4]                                                                                          ; |CPU_4T|address[4]                                                                                             ; out              ;
+; |CPU_4T|address[3]                                                                                          ; |CPU_4T|address[3]                                                                                             ; out              ;
+; |CPU_4T|address[2]                                                                                          ; |CPU_4T|address[2]                                                                                             ; out              ;
+; |CPU_4T|address[1]                                                                                          ; |CPU_4T|address[1]                                                                                             ; out              ;
+; |CPU_4T|address[0]                                                                                          ; |CPU_4T|address[0]                                                                                             ; out              ;
+; |CPU_4T|S[7]                                                                                                ; |CPU_4T|S[7]                                                                                                   ; pin_out          ;
+; |CPU_4T|S[6]                                                                                                ; |CPU_4T|S[6]                                                                                                   ; pin_out          ;
+; |CPU_4T|S[5]                                                                                                ; |CPU_4T|S[5]                                                                                                   ; pin_out          ;
+; |CPU_4T|S[4]                                                                                                ; |CPU_4T|S[4]                                                                                                   ; pin_out          ;
+; |CPU_4T|S[3]                                                                                                ; |CPU_4T|S[3]                                                                                                   ; pin_out          ;
+; |CPU_4T|S[2]                                                                                                ; |CPU_4T|S[2]                                                                                                   ; pin_out          ;
+; |CPU_4T|S[1]                                                                                                ; |CPU_4T|S[1]                                                                                                   ; pin_out          ;
+; |CPU_4T|S[0]                                                                                                ; |CPU_4T|S[0]                                                                                                   ; pin_out          ;
+; |CPU_4T|PC[5]                                                                                               ; |CPU_4T|PC[5]                                                                                                  ; pin_out          ;
+; |CPU_4T|PC[4]                                                                                               ; |CPU_4T|PC[4]                                                                                                  ; pin_out          ;
+; |CPU_4T|PC[3]                                                                                               ; |CPU_4T|PC[3]                                                                                                  ; pin_out          ;
+; |CPU_4T|PC[2]                                                                                               ; |CPU_4T|PC[2]                                                                                                  ; pin_out          ;
+; |CPU_4T|PC[1]                                                                                               ; |CPU_4T|PC[1]                                                                                                  ; pin_out          ;
+; |CPU_4T|PC[0]                                                                                               ; |CPU_4T|PC[0]                                                                                                  ; pin_out          ;
+; |CPU_4T|clear                                                                                               ; |CPU_4T|clear                                                                                                  ; out              ;
+; |CPU_4T|aload                                                                                               ; |CPU_4T|aload                                                                                                  ; out              ;
+; |CPU_4T|jump_address[5]                                                                                     ; |CPU_4T|jump_address[5]                                                                                        ; out              ;
+; |CPU_4T|jump_address[4]                                                                                     ; |CPU_4T|jump_address[4]                                                                                        ; out              ;
+; |CPU_4T|jump_address[3]                                                                                     ; |CPU_4T|jump_address[3]                                                                                        ; out              ;
+; |CPU_4T|jump_address[2]                                                                                     ; |CPU_4T|jump_address[2]                                                                                        ; out              ;
+; |CPU_4T|jump_address[1]                                                                                     ; |CPU_4T|jump_address[1]                                                                                        ; out              ;
+; |CPU_4T|jump_address[0]                                                                                     ; |CPU_4T|jump_address[0]                                                                                        ; out              ;
+; |CPU_4T|A[7]                                                                                                ; |CPU_4T|A[7]                                                                                                   ; out              ;
+; |CPU_4T|A[6]                                                                                                ; |CPU_4T|A[6]                                                                                                   ; out              ;
+; |CPU_4T|A[5]                                                                                                ; |CPU_4T|A[5]                                                                                                   ; out              ;
+; |CPU_4T|A[4]                                                                                                ; |CPU_4T|A[4]                                                                                                   ; out              ;
+; |CPU_4T|A[3]                                                                                                ; |CPU_4T|A[3]                                                                                                   ; out              ;
+; |CPU_4T|A[2]                                                                                                ; |CPU_4T|A[2]                                                                                                   ; out              ;
+; |CPU_4T|A[1]                                                                                                ; |CPU_4T|A[1]                                                                                                   ; out              ;
+; |CPU_4T|A[0]                                                                                                ; |CPU_4T|A[0]                                                                                                   ; out              ;
+; |CPU_4T|B[7]                                                                                                ; |CPU_4T|B[7]                                                                                                   ; out              ;
+; |CPU_4T|B[6]                                                                                                ; |CPU_4T|B[6]                                                                                                   ; out              ;
+; |CPU_4T|B[5]                                                                                                ; |CPU_4T|B[5]                                                                                                   ; out              ;
+; |CPU_4T|B[4]                                                                                                ; |CPU_4T|B[4]                                                                                                   ; out              ;
+; |CPU_4T|B[3]                                                                                                ; |CPU_4T|B[3]                                                                                                   ; out              ;
+; |CPU_4T|B[2]                                                                                                ; |CPU_4T|B[2]                                                                                                   ; out              ;
+; |CPU_4T|B[1]                                                                                                ; |CPU_4T|B[1]                                                                                                   ; out              ;
+; |CPU_4T|B[0]                                                                                                ; |CPU_4T|B[0]                                                                                                   ; out              ;
+; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[7]                                                     ; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[7]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[6]                                                     ; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[6]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[5]                                                     ; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[5]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[4]                                                     ; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[4]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[3]                                                     ; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[3]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[2]                                                     ; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[2]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[1]                                                     ; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[1]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[0]                                                     ; |CPU_4T|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[0]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[7]                                                     ; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[7]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[6]                                                     ; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[6]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[5]                                                     ; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[5]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[4]                                                     ; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[4]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[3]                                                     ; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[3]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[2]                                                     ; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[2]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[1]                                                     ; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[1]                                                        ; regout           ;
+; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[0]                                                     ; |CPU_4T|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[0]                                                        ; regout           ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|aclr_actual          ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|aclr_actual             ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~51                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~51                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~52                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~52                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~53                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~53                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~54                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~54                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~55                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~55                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~56                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~56                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_clrn[5]~0  ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_clrn[5]~0     ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_clrn[4]~1  ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_clrn[4]~1     ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_clrn[3]~2  ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_clrn[3]~2     ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_clrn[2]~3  ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_clrn[2]~3     ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_clrn[1]~4  ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_clrn[1]~4     ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_clrn[0]~5  ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_clrn[0]~5     ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_prn[5]~0   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_prn[5]~0      ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_prn[4]~1   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_prn[4]~1      ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_prn[3]~2   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_prn[3]~2      ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_prn[2]~3   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_prn[2]~3      ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_prn[1]~4   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_prn[1]~4      ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_prn[0]~5   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|effective_prn[0]~5      ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[5]      ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[5]         ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[4]      ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[4]         ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[3]      ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[3]         ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[2]      ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[2]         ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[1]      ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[1]         ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[0]      ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|latch_signal[0]         ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_latch_signal[5]  ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_latch_signal[5]     ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_latch_signal[4]  ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_latch_signal[4]     ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_latch_signal[3]  ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_latch_signal[3]     ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_latch_signal[2]  ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_latch_signal[2]     ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_latch_signal[1]  ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_latch_signal[1]     ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_latch_signal[0]  ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_latch_signal[0]     ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~58                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~58                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~59                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~59                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~60                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~60                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~61                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~61                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~62                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~62                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~64                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~64                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~65                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~65                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~66                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~66                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~67                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~67                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~68                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~68                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~82                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~82                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~83                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~83                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~84                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~84                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~85                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~85                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~86                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~86                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~88                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~88                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~89                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~89                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~90                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~90                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~91                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~91                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~92                 ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|_~92                    ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[5]~0          ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[5]~0             ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[4]~1          ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[4]~1             ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[3]~2          ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[3]~2             ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[2]~3          ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[2]~3             ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[1]~4          ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[1]~4             ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[0]~5          ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[0]~5             ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[5]~6          ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[5]~6             ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[4]~7          ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[4]~7             ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[3]~8          ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[3]~8             ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[2]~9          ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[2]~9             ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[1]~10         ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[1]~10            ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[0]~11         ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[0]~11            ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[5]            ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[5]               ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[4]            ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[4]               ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[3]            ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[3]               ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[2]            ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[2]               ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[1]            ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[1]               ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[0]            ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|safe_q[0]               ; out0             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita0   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita0~COUT ; cout             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita1   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita1      ; combout          ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita1   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita1~COUT ; cout             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita2   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita2      ; combout          ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita2   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita2~COUT ; cout             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita3   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita3      ; combout          ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita3   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita3~COUT ; cout             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita4   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita4      ; combout          ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita4   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita4~COUT ; cout             ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita5   ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_comb_bita5      ; combout          ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_reg_bit1a[5] ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_hazard[5]           ; regout           ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_reg_bit1a[4] ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_hazard[4]           ; regout           ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_reg_bit1a[3] ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_hazard[3]           ; regout           ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_reg_bit1a[2] ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_hazard[2]           ; regout           ;
+; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|counter_reg_bit1a[1] ; |CPU_4T|lpm_counter128:inst1|lpm_counter:lpm_counter_component|cntr_n1j:auto_generated|pre_hazard[1]           ; regout           ;
+; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|ram_block1a0          ; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|q_a[0]                   ; portadataout0    ;
+; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|ram_block1a1          ; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|q_a[1]                   ; portadataout0    ;
+; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|ram_block1a2          ; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|q_a[2]                   ; portadataout0    ;
+; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|ram_block1a3          ; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|q_a[3]                   ; portadataout0    ;
+; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|ram_block1a4          ; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|q_a[4]                   ; portadataout0    ;
+; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|ram_block1a5          ; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|q_a[5]                   ; portadataout0    ;
+; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|ram_block1a6          ; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|q_a[6]                   ; portadataout0    ;
+; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|ram_block1a7          ; |CPU_4T|lpm_rom0:inst3|altsyncram:altsyncram_component|altsyncram_hg71:auto_generated|q_a[7]                   ; portadataout0    ;
+; |CPU_4T|alu_16:inst|74182:inst8|23                                                                          ; |CPU_4T|alu_16:inst|74182:inst8|23                                                                             ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|81                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|81                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|54                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|54                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|47                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|47                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|14                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|14                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|13                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|13                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|44                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|44                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|11                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|11                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|12                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|12                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|79                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|79                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|66                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|66                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|46                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|46                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|9                                                                          ; |CPU_4T|alu_16:inst|74181:inst11|9                                                                             ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|8                                                                          ; |CPU_4T|alu_16:inst|74181:inst11|8                                                                             ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|65                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|65                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|43                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|43                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|6                                                                          ; |CPU_4T|alu_16:inst|74181:inst11|6                                                                             ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|7                                                                          ; |CPU_4T|alu_16:inst|74181:inst11|7                                                                             ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|77                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|77                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|56                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|56                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|52                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|52                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|24                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|24                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|23                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|23                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|51                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|51                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|21                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|21                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|22                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|22                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|74                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|74                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|73                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|73                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|48                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|48                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|19                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|19                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|18                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|18                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|72                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|72                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|71                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|71                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|70                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|70                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|45                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|45                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|16                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|16                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|17                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|17                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|82                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|82                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|55                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|55                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|75                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|75                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|67                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|67                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|68                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|68                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|69                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|69                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|80                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|80                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|53                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|53                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst11|64                                                                         ; |CPU_4T|alu_16:inst|74181:inst11|64                                                                            ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|81                                                                           ; |CPU_4T|alu_16:inst|74181:inst|81                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|54                                                                           ; |CPU_4T|alu_16:inst|74181:inst|54                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|47                                                                           ; |CPU_4T|alu_16:inst|74181:inst|47                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|14                                                                           ; |CPU_4T|alu_16:inst|74181:inst|14                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|13                                                                           ; |CPU_4T|alu_16:inst|74181:inst|13                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|44                                                                           ; |CPU_4T|alu_16:inst|74181:inst|44                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|11                                                                           ; |CPU_4T|alu_16:inst|74181:inst|11                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|12                                                                           ; |CPU_4T|alu_16:inst|74181:inst|12                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|79                                                                           ; |CPU_4T|alu_16:inst|74181:inst|79                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|66                                                                           ; |CPU_4T|alu_16:inst|74181:inst|66                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|46                                                                           ; |CPU_4T|alu_16:inst|74181:inst|46                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|9                                                                            ; |CPU_4T|alu_16:inst|74181:inst|9                                                                               ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|8                                                                            ; |CPU_4T|alu_16:inst|74181:inst|8                                                                               ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|65                                                                           ; |CPU_4T|alu_16:inst|74181:inst|65                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|43                                                                           ; |CPU_4T|alu_16:inst|74181:inst|43                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|6                                                                            ; |CPU_4T|alu_16:inst|74181:inst|6                                                                               ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|7                                                                            ; |CPU_4T|alu_16:inst|74181:inst|7                                                                               ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|77                                                                           ; |CPU_4T|alu_16:inst|74181:inst|77                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|56                                                                           ; |CPU_4T|alu_16:inst|74181:inst|56                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|52                                                                           ; |CPU_4T|alu_16:inst|74181:inst|52                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|24                                                                           ; |CPU_4T|alu_16:inst|74181:inst|24                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|23                                                                           ; |CPU_4T|alu_16:inst|74181:inst|23                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|51                                                                           ; |CPU_4T|alu_16:inst|74181:inst|51                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|21                                                                           ; |CPU_4T|alu_16:inst|74181:inst|21                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|22                                                                           ; |CPU_4T|alu_16:inst|74181:inst|22                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|74                                                                           ; |CPU_4T|alu_16:inst|74181:inst|74                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|73                                                                           ; |CPU_4T|alu_16:inst|74181:inst|73                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|48                                                                           ; |CPU_4T|alu_16:inst|74181:inst|48                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|19                                                                           ; |CPU_4T|alu_16:inst|74181:inst|19                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|18                                                                           ; |CPU_4T|alu_16:inst|74181:inst|18                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|72                                                                           ; |CPU_4T|alu_16:inst|74181:inst|72                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|71                                                                           ; |CPU_4T|alu_16:inst|74181:inst|71                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|70                                                                           ; |CPU_4T|alu_16:inst|74181:inst|70                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|45                                                                           ; |CPU_4T|alu_16:inst|74181:inst|45                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|16                                                                           ; |CPU_4T|alu_16:inst|74181:inst|16                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|17                                                                           ; |CPU_4T|alu_16:inst|74181:inst|17                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|82                                                                           ; |CPU_4T|alu_16:inst|74181:inst|82                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|55                                                                           ; |CPU_4T|alu_16:inst|74181:inst|55                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|75                                                                           ; |CPU_4T|alu_16:inst|74181:inst|75                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|67                                                                           ; |CPU_4T|alu_16:inst|74181:inst|67                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|68                                                                           ; |CPU_4T|alu_16:inst|74181:inst|68                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|69                                                                           ; |CPU_4T|alu_16:inst|74181:inst|69                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|80                                                                           ; |CPU_4T|alu_16:inst|74181:inst|80                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|53                                                                           ; |CPU_4T|alu_16:inst|74181:inst|53                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|64                                                                           ; |CPU_4T|alu_16:inst|74181:inst|64                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|60                                                                           ; |CPU_4T|alu_16:inst|74181:inst|60                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|63                                                                           ; |CPU_4T|alu_16:inst|74181:inst|63                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|58                                                                           ; |CPU_4T|alu_16:inst|74181:inst|58                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|59                                                                           ; |CPU_4T|alu_16:inst|74181:inst|59                                                                              ; out0             ;
+; |CPU_4T|alu_16:inst|74181:inst|62                                                                           ; |CPU_4T|alu_16:inst|74181:inst|62                                                                              ; out0             ;
+; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|ram_block1a0       ; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|q_a[0]                ; portadataout0    ;
+; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|ram_block1a1       ; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|q_a[1]                ; portadataout0    ;
+; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|ram_block1a2       ; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|q_a[2]                ; portadataout0    ;
+; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|ram_block1a3       ; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|q_a[3]                ; portadataout0    ;
+; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|ram_block1a4       ; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|q_a[4]                ; portadataout0    ;
+; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|ram_block1a5       ; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|q_a[5]                ; portadataout0    ;
+; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|ram_block1a6       ; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|q_a[6]                ; portadataout0    ;
+; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|ram_block1a7       ; |CPU_4T|lpm_ram_dq0:inst5|altsyncram:altsyncram_component|altsyncram_rpa1:auto_generated|q_a[7]                ; portadataout0    ;
+; |CPU_4T|CPU_4T_Final:inst2|inst8                                                                            ; |CPU_4T|CPU_4T_Final:inst2|inst8                                                                               ; regout           ;
+; |CPU_4T|CPU_4T_Final:inst2|inst7                                                                            ; |CPU_4T|CPU_4T_Final:inst2|inst7                                                                               ; out0             ;
++-------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Wed Jun 14 15:47:34 2023
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off CPU_4T -c CPU_4T
+Info: Using vector source file "G:/mywork/CPU_8/CPU_8bit_4T/CPU_4T.vwf"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|write"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|address[5]"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|address[4]"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|address[3]"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|address[2]"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|address[1]"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|address[0]"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|clear"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|aload"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|jump_address[5]"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|jump_address[4]"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|jump_address[3]"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|jump_address[2]"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|jump_address[1]"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|jump_address[0]"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|A[7]"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|A[6]"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|A[5]"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|A[4]"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|A[3]"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|A[2]"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|A[1]"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|A[0]"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|B[7]"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|B[6]"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|B[5]"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|B[4]"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|B[3]"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|B[2]"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|B[1]"
+Warning: Can't find signal in vector source file for input pin "|CPU_4T|B[0]"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is       6.80 %
+Info: Number of transitions in simulation is 1446
+Info: Quartus II Simulator was successful. 0 errors, 31 warnings
+    Info: Peak virtual memory: 153 megabytes
+    Info: Processing ended: Wed Jun 14 15:47:34 2023
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+

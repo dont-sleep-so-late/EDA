@@ -1,0 +1,36 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 13.107 ns
+From           : ct10:inst1|lpm_counter:lpm_counter_component|cntr_dik:auto_generated|safe_q[3]
+To             : coutL[5]
+From Clock     : Cin
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'Cin'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 228.52 MHz ( period = 4.376 ns )
+From           : ct10:inst1|lpm_counter:lpm_counter_component|cntr_dik:auto_generated|safe_q[0]
+To             : ct10:inst1|lpm_counter:lpm_counter_component|cntr_dik:auto_generated|safe_q[2]
+From Clock     : Cin
+To Clock       : Cin
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

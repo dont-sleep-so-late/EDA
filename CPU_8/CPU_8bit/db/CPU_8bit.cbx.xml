@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="CPU_8bit">
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_8bit|lpm_counter128:inst1|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_n1j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_8bit|lpm_ram_dq0:inst5|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_rpa1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_8bit|lpm_rom0:inst3|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_hg71.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

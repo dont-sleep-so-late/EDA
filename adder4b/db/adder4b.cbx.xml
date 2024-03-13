@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="adder4b">
+		<CBX_INST_ENTRY INSTANCE_NAME="|adder4b|adder4c:inst|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_tdi.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

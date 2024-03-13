@@ -1,0 +1,74 @@
+|adder4b
+Cout <= adder4c:inst.cout
+Cin => adder4c:inst.cin
+A[0] => adder4c:inst.dataa[0]
+A[1] => adder4c:inst.dataa[1]
+A[2] => adder4c:inst.dataa[2]
+A[3] => adder4c:inst.dataa[3]
+B[0] => adder4c:inst.datab[0]
+B[1] => adder4c:inst.datab[1]
+B[2] => adder4c:inst.datab[2]
+B[3] => adder4c:inst.datab[3]
+S[0] <= adder4c:inst.result[0]
+S[1] <= adder4c:inst.result[1]
+S[2] <= adder4c:inst.result[2]
+S[3] <= adder4c:inst.result[3]
+
+
+|adder4b|adder4c:inst
+cin => lpm_add_sub:lpm_add_sub_component.cin
+dataa[0] => lpm_add_sub:lpm_add_sub_component.dataa[0]
+dataa[1] => lpm_add_sub:lpm_add_sub_component.dataa[1]
+dataa[2] => lpm_add_sub:lpm_add_sub_component.dataa[2]
+dataa[3] => lpm_add_sub:lpm_add_sub_component.dataa[3]
+datab[0] => lpm_add_sub:lpm_add_sub_component.datab[0]
+datab[1] => lpm_add_sub:lpm_add_sub_component.datab[1]
+datab[2] => lpm_add_sub:lpm_add_sub_component.datab[2]
+datab[3] => lpm_add_sub:lpm_add_sub_component.datab[3]
+cout <= lpm_add_sub:lpm_add_sub_component.cout
+result[0] <= lpm_add_sub:lpm_add_sub_component.result[0]
+result[1] <= lpm_add_sub:lpm_add_sub_component.result[1]
+result[2] <= lpm_add_sub:lpm_add_sub_component.result[2]
+result[3] <= lpm_add_sub:lpm_add_sub_component.result[3]
+
+
+|adder4b|adder4c:inst|lpm_add_sub:lpm_add_sub_component
+dataa[0] => add_sub_tdi:auto_generated.dataa[0]
+dataa[1] => add_sub_tdi:auto_generated.dataa[1]
+dataa[2] => add_sub_tdi:auto_generated.dataa[2]
+dataa[3] => add_sub_tdi:auto_generated.dataa[3]
+datab[0] => add_sub_tdi:auto_generated.datab[0]
+datab[1] => add_sub_tdi:auto_generated.datab[1]
+datab[2] => add_sub_tdi:auto_generated.datab[2]
+datab[3] => add_sub_tdi:auto_generated.datab[3]
+cin => add_sub_tdi:auto_generated.cin
+add_sub => ~NO_FANOUT~
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= add_sub_tdi:auto_generated.result[0]
+result[1] <= add_sub_tdi:auto_generated.result[1]
+result[2] <= add_sub_tdi:auto_generated.result[2]
+result[3] <= add_sub_tdi:auto_generated.result[3]
+cout <= add_sub_tdi:auto_generated.cout
+overflow <= <GND>
+
+
+|adder4b|adder4c:inst|lpm_add_sub:lpm_add_sub_component|add_sub_tdi:auto_generated
+cin => op_1.IN10
+cin => op_1.IN11
+cout <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+dataa[0] => op_1.IN8
+dataa[1] => op_1.IN6
+dataa[2] => op_1.IN4
+dataa[3] => op_1.IN2
+datab[0] => op_1.IN9
+datab[1] => op_1.IN7
+datab[2] => op_1.IN5
+datab[3] => op_1.IN3
+result[0] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+
+

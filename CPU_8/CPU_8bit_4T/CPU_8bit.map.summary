@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Oct 21 10:04:04 2022
+Quartus II Version : 9.1 Build 222 10/21/2009 SJ Web Edition
+Revision Name : CPU_8bit
+Top-level Entity Name : CPU_8bit
+Family : Cyclone II
+Total logic elements : 76
+    Total combinational functions : 60
+    Dedicated logic registers : 22
+Total registers : 22
+Total pins : 55
+Total virtual pins : 0
+Total memory bits : 1,024
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

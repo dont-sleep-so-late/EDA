@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 3.658 ns
+From           : en
+To             : block60:inst|ct10:inst|lpm_counter:lpm_counter_component|cntr_dik:auto_generated|safe_q[1]
+From Clock     : --
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 11.242 ns
+From           : block60:inst|ct10:inst1|lpm_counter:lpm_counter_component|cntr_dik:auto_generated|safe_q[2]
+To             : L[2]
+From Clock     : clk
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -0.646 ns
+From           : en
+To             : block60:inst|ct10:inst1|lpm_counter:lpm_counter_component|cntr_dik:auto_generated|safe_q[3]
+From Clock     : --
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 168.21 MHz ( period = 5.945 ns )
+From           : block60:inst8|ct10:inst1|lpm_counter:lpm_counter_component|cntr_dik:auto_generated|safe_q[0]
+To             : block24:inst9|ct10:inst7|lpm_counter:lpm_counter_component|cntr_dik:auto_generated|safe_q[3]
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+
