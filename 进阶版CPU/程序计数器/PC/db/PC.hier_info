@@ -1,0 +1,89 @@
+|PC
+AD[0] <= lpm_counter_pc:inst.q[0]
+AD[1] <= lpm_counter_pc:inst.q[1]
+AD[2] <= lpm_counter_pc:inst.q[2]
+AD[3] <= lpm_counter_pc:inst.q[3]
+RST => lpm_counter_pc:inst.sclr
+set_pc => lpm_counter_pc:inst.sload
+clk => lpm_counter_pc:inst.clock
+PC_data[0] => lpm_counter_pc:inst.data[0]
+PC_data[1] => lpm_counter_pc:inst.data[1]
+PC_data[2] => lpm_counter_pc:inst.data[2]
+PC_data[3] => lpm_counter_pc:inst.data[3]
+
+
+|PC|lpm_counter_pc:inst
+clock => lpm_counter:lpm_counter_component.clock
+data[0] => lpm_counter:lpm_counter_component.data[0]
+data[1] => lpm_counter:lpm_counter_component.data[1]
+data[2] => lpm_counter:lpm_counter_component.data[2]
+data[3] => lpm_counter:lpm_counter_component.data[3]
+sclr => lpm_counter:lpm_counter_component.sclr
+sload => lpm_counter:lpm_counter_component.sload
+q[0] <= lpm_counter:lpm_counter_component.q[0]
+q[1] <= lpm_counter:lpm_counter_component.q[1]
+q[2] <= lpm_counter:lpm_counter_component.q[2]
+q[3] <= lpm_counter:lpm_counter_component.q[3]
+
+
+|PC|lpm_counter_pc:inst|lpm_counter:lpm_counter_component
+clock => cntr_p2j:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => ~NO_FANOUT~
+updown => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => cntr_p2j:auto_generated.sclr
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => cntr_p2j:auto_generated.sload
+data[0] => cntr_p2j:auto_generated.data[0]
+data[1] => cntr_p2j:auto_generated.data[1]
+data[2] => cntr_p2j:auto_generated.data[2]
+data[3] => cntr_p2j:auto_generated.data[3]
+cin => ~NO_FANOUT~
+q[0] <= cntr_p2j:auto_generated.q[0]
+q[1] <= cntr_p2j:auto_generated.q[1]
+q[2] <= cntr_p2j:auto_generated.q[2]
+q[3] <= cntr_p2j:auto_generated.q[3]
+cout <= <GND>
+eq[0] <= <GND>
+eq[1] <= <GND>
+eq[2] <= <GND>
+eq[3] <= <GND>
+eq[4] <= <GND>
+eq[5] <= <GND>
+eq[6] <= <GND>
+eq[7] <= <GND>
+eq[8] <= <GND>
+eq[9] <= <GND>
+eq[10] <= <GND>
+eq[11] <= <GND>
+eq[12] <= <GND>
+eq[13] <= <GND>
+eq[14] <= <GND>
+eq[15] <= <GND>
+
+
+|PC|lpm_counter_pc:inst|lpm_counter:lpm_counter_component|cntr_p2j:auto_generated
+clock => counter_reg_bit1a[3].CLK
+clock => counter_reg_bit1a[2].CLK
+clock => counter_reg_bit1a[1].CLK
+clock => counter_reg_bit1a[0].CLK
+data[0] => _~12.IN1
+data[1] => _~11.IN1
+data[2] => _~10.IN1
+data[3] => _~9.IN1
+q[0] <= counter_reg_bit1a[0].REGOUT
+q[1] <= counter_reg_bit1a[1].REGOUT
+q[2] <= counter_reg_bit1a[2].REGOUT
+q[3] <= counter_reg_bit1a[3].REGOUT
+sclr => _~0.IN0
+sclr => _~3.IN0
+sclr => _~17.IN0
+sload => _~1.IN1
+sload => counter_reg_bit1a[3]~5.IN1
+
+

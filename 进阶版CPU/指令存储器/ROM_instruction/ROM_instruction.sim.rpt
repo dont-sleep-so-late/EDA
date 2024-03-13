@@ -1,0 +1,206 @@
+Simulator report for ROM_instruction
+Thu Jun 30 17:14:37 2022
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|ALTSYNCRAM
+  6. Coverage Summary
+  7. Complete 1/0-Value Coverage
+  8. Missing 1-Value Coverage
+  9. Missing 0-Value Coverage
+ 10. Simulator INI Usage
+ 11. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 37 nodes     ;
+; Simulation Coverage         ;      89.19 % ;
+; Total Number of Transitions ; 1067         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------------------------------------------+
+; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|ALTSYNCRAM ;
++--------------------------------------------------------------------------------------------------------+
+Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      89.19 % ;
+; Total nodes checked                                 ; 37           ;
+; Total output ports checked                          ; 37           ;
+; Total output ports with complete 1/0-value coverage ; 33           ;
+; Total output ports with no 1/0-value coverage       ; 2            ;
+; Total output ports with no 1-value coverage         ; 2            ;
+; Total output ports with no 0-value coverage         ; 4            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                        ;
++-----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                 ; Output Port Name                                                                                    ; Output Port Type ;
++-----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+; |ROM_instruction|IR_data[14]                                                                              ; |ROM_instruction|IR_data[14]                                                                        ; pin_out          ;
+; |ROM_instruction|IR_data[13]                                                                              ; |ROM_instruction|IR_data[13]                                                                        ; pin_out          ;
+; |ROM_instruction|IR_data[12]                                                                              ; |ROM_instruction|IR_data[12]                                                                        ; pin_out          ;
+; |ROM_instruction|IR_data[11]                                                                              ; |ROM_instruction|IR_data[11]                                                                        ; pin_out          ;
+; |ROM_instruction|IR_data[10]                                                                              ; |ROM_instruction|IR_data[10]                                                                        ; pin_out          ;
+; |ROM_instruction|IR_data[9]                                                                               ; |ROM_instruction|IR_data[9]                                                                         ; pin_out          ;
+; |ROM_instruction|IR_data[7]                                                                               ; |ROM_instruction|IR_data[7]                                                                         ; pin_out          ;
+; |ROM_instruction|IR_data[6]                                                                               ; |ROM_instruction|IR_data[6]                                                                         ; pin_out          ;
+; |ROM_instruction|IR_data[5]                                                                               ; |ROM_instruction|IR_data[5]                                                                         ; pin_out          ;
+; |ROM_instruction|IR_data[4]                                                                               ; |ROM_instruction|IR_data[4]                                                                         ; pin_out          ;
+; |ROM_instruction|IR_data[3]                                                                               ; |ROM_instruction|IR_data[3]                                                                         ; pin_out          ;
+; |ROM_instruction|IR_data[2]                                                                               ; |ROM_instruction|IR_data[2]                                                                         ; pin_out          ;
+; |ROM_instruction|IR_data[1]                                                                               ; |ROM_instruction|IR_data[1]                                                                         ; pin_out          ;
+; |ROM_instruction|IR_data[0]                                                                               ; |ROM_instruction|IR_data[0]                                                                         ; pin_out          ;
+; |ROM_instruction|clk                                                                                      ; |ROM_instruction|clk                                                                                ; out              ;
+; |ROM_instruction|AD[3]                                                                                    ; |ROM_instruction|AD[3]                                                                              ; out              ;
+; |ROM_instruction|AD[2]                                                                                    ; |ROM_instruction|AD[2]                                                                              ; out              ;
+; |ROM_instruction|AD[1]                                                                                    ; |ROM_instruction|AD[1]                                                                              ; out              ;
+; |ROM_instruction|AD[0]                                                                                    ; |ROM_instruction|AD[0]                                                                              ; out              ;
+; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|ram_block1a0  ; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|q_a[0]  ; portadataout0    ;
+; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|ram_block1a1  ; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|q_a[1]  ; portadataout0    ;
+; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|ram_block1a2  ; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|q_a[2]  ; portadataout0    ;
+; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|ram_block1a3  ; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|q_a[3]  ; portadataout0    ;
+; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|ram_block1a4  ; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|q_a[4]  ; portadataout0    ;
+; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|ram_block1a5  ; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|q_a[5]  ; portadataout0    ;
+; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|ram_block1a6  ; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|q_a[6]  ; portadataout0    ;
+; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|ram_block1a7  ; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|q_a[7]  ; portadataout0    ;
+; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|ram_block1a9  ; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|q_a[9]  ; portadataout0    ;
+; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|ram_block1a10 ; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|q_a[10] ; portadataout0    ;
+; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|ram_block1a11 ; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|q_a[11] ; portadataout0    ;
+; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|ram_block1a12 ; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|q_a[12] ; portadataout0    ;
+; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|ram_block1a13 ; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|q_a[13] ; portadataout0    ;
+; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|ram_block1a14 ; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|q_a[14] ; portadataout0    ;
++-----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                                           ;
++-----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                 ; Output Port Name                                                                                    ; Output Port Type ;
++-----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+; |ROM_instruction|IR_data[15]                                                                              ; |ROM_instruction|IR_data[15]                                                                        ; pin_out          ;
+; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|ram_block1a15 ; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|q_a[15] ; portadataout0    ;
++-----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                           ;
++-----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                 ; Output Port Name                                                                                    ; Output Port Type ;
++-----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+; |ROM_instruction|IR_data[15]                                                                              ; |ROM_instruction|IR_data[15]                                                                        ; pin_out          ;
+; |ROM_instruction|IR_data[8]                                                                               ; |ROM_instruction|IR_data[8]                                                                         ; pin_out          ;
+; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|ram_block1a8  ; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|q_a[8]  ; portadataout0    ;
+; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|ram_block1a15 ; |ROM_instruction|lpm_ir:inst|altsyncram:altsyncram_component|altsyncram_ho91:auto_generated|q_a[15] ; portadataout0    ;
++-----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Thu Jun 30 17:14:36 2022
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off ROM_instruction -c ROM_instruction
+Info: Using vector source file "D:/我的/课程资料/硬件基础实践/进阶版CPU/指令存储器/ROM_instruction/ROM_instruction.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      89.19 %
+Info: Number of transitions in simulation is 1067
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 159 megabytes
+    Info: Processing ended: Thu Jun 30 17:14:37 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

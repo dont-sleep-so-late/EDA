@@ -1,0 +1,72 @@
+|DR
+F[0] <= lpm_latch8_DR:inst.q[0]
+F[1] <= lpm_latch8_DR:inst.q[1]
+F[2] <= lpm_latch8_DR:inst.q[2]
+F[3] <= lpm_latch8_DR:inst.q[3]
+F[4] <= lpm_latch8_DR:inst.q[4]
+F[5] <= lpm_latch8_DR:inst.q[5]
+F[6] <= lpm_latch8_DR:inst.q[6]
+F[7] <= lpm_latch8_DR:inst.q[7]
+gate => lpm_latch8_DR:inst.gate
+RST => lpm_latch8_DR:inst.aclr
+DR_data[0] => lpm_latch8_DR:inst.data[0]
+DR_data[1] => lpm_latch8_DR:inst.data[1]
+DR_data[2] => lpm_latch8_DR:inst.data[2]
+DR_data[3] => lpm_latch8_DR:inst.data[3]
+DR_data[4] => lpm_latch8_DR:inst.data[4]
+DR_data[5] => lpm_latch8_DR:inst.data[5]
+DR_data[6] => lpm_latch8_DR:inst.data[6]
+DR_data[7] => lpm_latch8_DR:inst.data[7]
+
+
+|DR|lpm_latch8_DR:inst
+aclr => lpm_latch:lpm_latch_component.aclr
+data[0] => lpm_latch:lpm_latch_component.data[0]
+data[1] => lpm_latch:lpm_latch_component.data[1]
+data[2] => lpm_latch:lpm_latch_component.data[2]
+data[3] => lpm_latch:lpm_latch_component.data[3]
+data[4] => lpm_latch:lpm_latch_component.data[4]
+data[5] => lpm_latch:lpm_latch_component.data[5]
+data[6] => lpm_latch:lpm_latch_component.data[6]
+data[7] => lpm_latch:lpm_latch_component.data[7]
+gate => lpm_latch:lpm_latch_component.gate
+q[0] <= lpm_latch:lpm_latch_component.q[0]
+q[1] <= lpm_latch:lpm_latch_component.q[1]
+q[2] <= lpm_latch:lpm_latch_component.q[2]
+q[3] <= lpm_latch:lpm_latch_component.q[3]
+q[4] <= lpm_latch:lpm_latch_component.q[4]
+q[5] <= lpm_latch:lpm_latch_component.q[5]
+q[6] <= lpm_latch:lpm_latch_component.q[6]
+q[7] <= lpm_latch:lpm_latch_component.q[7]
+
+
+|DR|lpm_latch8_DR:inst|lpm_latch:lpm_latch_component
+data[0] => latches[0].DATAIN
+data[1] => latches[1].DATAIN
+data[2] => latches[2].DATAIN
+data[3] => latches[3].DATAIN
+data[4] => latches[4].DATAIN
+data[5] => latches[5].DATAIN
+data[6] => latches[6].DATAIN
+data[7] => latches[7].DATAIN
+gate => latches[7].LATCH_ENABLE
+gate => latches[6].LATCH_ENABLE
+gate => latches[5].LATCH_ENABLE
+gate => latches[4].LATCH_ENABLE
+gate => latches[3].LATCH_ENABLE
+gate => latches[2].LATCH_ENABLE
+gate => latches[1].LATCH_ENABLE
+gate => latches[0].LATCH_ENABLE
+aclr => latches[7]~0.IN0
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+q[0] <= latches[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= latches[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= latches[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= latches[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= latches[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= latches[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= latches[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= latches[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

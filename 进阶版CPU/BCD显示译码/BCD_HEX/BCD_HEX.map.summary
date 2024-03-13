@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Jun 30 12:02:19 2022
+Quartus II Version : 9.1 Build 222 10/21/2009 SJ Web Edition
+Revision Name : BCD_HEX
+Top-level Entity Name : BCD_HEX
+Family : Cyclone II
+Total logic elements : 211
+    Total combinational functions : 211
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 29
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

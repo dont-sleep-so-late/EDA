@@ -1,0 +1,65 @@
+Quartus II
+Version 9.1 Build 222 10/21/2009 SJ Web Edition
+11
+1021
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+7446
+# storage
+db|HEX7.(1).cnf
+db|HEX7.(1).cnf
+# case_insensitive
+# source_file
+|qurtqus|quartus|libraries|others|maxplus2|7446.bdf
+2fcc939b9a5229833dd30f033b73587
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+7446:inst3
+7446:inst2
+7446:inst
+}
+# macro_sequence
+
+# end
+# entity
+HEX7
+# storage
+db|HEX7.(0).cnf
+db|HEX7.(0).cnf
+# case_insensitive
+# source_file
+hex7.bdf
+793c72cb2d784559c0bb6bb82fba8d1
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

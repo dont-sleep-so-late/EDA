@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Jun 28 22:05:43 2022
+Quartus II Version : 9.1 Build 222 10/21/2009 SJ Web Edition
+Revision Name : mux41
+Top-level Entity Name : mux41
+Family : Cyclone II
+Total logic elements : 32
+    Total combinational functions : 32
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 52
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

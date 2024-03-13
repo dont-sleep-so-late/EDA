@@ -1,0 +1,348 @@
+Simulator report for HEX7
+Thu Jun 30 21:30:47 2022
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 105 nodes    ;
+; Simulation Coverage         ;      20.95 % ;
+; Total Number of Transitions ; 58           ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      20.95 % ;
+; Total nodes checked                                 ; 105          ;
+; Total output ports checked                          ; 105          ;
+; Total output ports with complete 1/0-value coverage ; 22           ;
+; Total output ports with no 1/0-value coverage       ; 83           ;
+; Total output ports with no 1-value coverage         ; 83           ;
+; Total output ports with no 0-value coverage         ; 83           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                    ;
++----------------------+----------------------+------------------+
+; Node Name            ; Output Port Name     ; Output Port Type ;
++----------------------+----------------------+------------------+
+; |HEX7|BCD_IN[9]      ; |HEX7|BCD_IN[9]      ; out              ;
+; |HEX7|BCD_IN[7]      ; |HEX7|BCD_IN[7]      ; out              ;
+; |HEX7|BCD_IN[6]      ; |HEX7|BCD_IN[6]      ; out              ;
+; |HEX7|BCD_IN[5]      ; |HEX7|BCD_IN[5]      ; out              ;
+; |HEX7|HEX1[6]        ; |HEX7|HEX1[6]        ; pin_out          ;
+; |HEX7|HEX1[1]        ; |HEX7|HEX1[1]        ; pin_out          ;
+; |HEX7|HEX1[0]        ; |HEX7|HEX1[0]        ; pin_out          ;
+; |HEX7|HEX2[6]        ; |HEX7|HEX2[6]        ; pin_out          ;
+; |HEX7|HEX2[5]        ; |HEX7|HEX2[5]        ; pin_out          ;
+; |HEX7|HEX2[2]        ; |HEX7|HEX2[2]        ; pin_out          ;
+; |HEX7|7446:inst|98   ; |HEX7|7446:inst|98   ; out0             ;
+; |HEX7|7446:inst|6    ; |HEX7|7446:inst|6    ; out0             ;
+; |HEX7|7446:inst|101  ; |HEX7|7446:inst|101  ; out0             ;
+; |HEX7|7446:inst|30   ; |HEX7|7446:inst|30   ; out0             ;
+; |HEX7|7446:inst|102  ; |HEX7|7446:inst|102  ; out0             ;
+; |HEX7|7446:inst|38   ; |HEX7|7446:inst|38   ; out0             ;
+; |HEX7|7446:inst2|96  ; |HEX7|7446:inst2|96  ; out0             ;
+; |HEX7|7446:inst2|35  ; |HEX7|7446:inst2|35  ; out0             ;
+; |HEX7|7446:inst2|97  ; |HEX7|7446:inst2|97  ; out0             ;
+; |HEX7|7446:inst2|7   ; |HEX7|7446:inst2|7   ; out0             ;
+; |HEX7|7446:inst2|102 ; |HEX7|7446:inst2|102 ; out0             ;
+; |HEX7|7446:inst2|38  ; |HEX7|7446:inst2|38  ; out0             ;
++----------------------+----------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------+
+; Missing 1-Value Coverage                                       ;
++----------------------+----------------------+------------------+
+; Node Name            ; Output Port Name     ; Output Port Type ;
++----------------------+----------------------+------------------+
+; |HEX7|HEX0[6]        ; |HEX7|HEX0[6]        ; pin_out          ;
+; |HEX7|HEX0[5]        ; |HEX7|HEX0[5]        ; pin_out          ;
+; |HEX7|HEX0[4]        ; |HEX7|HEX0[4]        ; pin_out          ;
+; |HEX7|HEX0[3]        ; |HEX7|HEX0[3]        ; pin_out          ;
+; |HEX7|HEX0[2]        ; |HEX7|HEX0[2]        ; pin_out          ;
+; |HEX7|HEX0[1]        ; |HEX7|HEX0[1]        ; pin_out          ;
+; |HEX7|HEX0[0]        ; |HEX7|HEX0[0]        ; pin_out          ;
+; |HEX7|BCD_IN[11]     ; |HEX7|BCD_IN[11]     ; out              ;
+; |HEX7|BCD_IN[10]     ; |HEX7|BCD_IN[10]     ; out              ;
+; |HEX7|BCD_IN[8]      ; |HEX7|BCD_IN[8]      ; out              ;
+; |HEX7|BCD_IN[4]      ; |HEX7|BCD_IN[4]      ; out              ;
+; |HEX7|BCD_IN[3]      ; |HEX7|BCD_IN[3]      ; out              ;
+; |HEX7|BCD_IN[2]      ; |HEX7|BCD_IN[2]      ; out              ;
+; |HEX7|BCD_IN[1]      ; |HEX7|BCD_IN[1]      ; out              ;
+; |HEX7|BCD_IN[0]      ; |HEX7|BCD_IN[0]      ; out              ;
+; |HEX7|HEX1[5]        ; |HEX7|HEX1[5]        ; pin_out          ;
+; |HEX7|HEX1[4]        ; |HEX7|HEX1[4]        ; pin_out          ;
+; |HEX7|HEX1[3]        ; |HEX7|HEX1[3]        ; pin_out          ;
+; |HEX7|HEX1[2]        ; |HEX7|HEX1[2]        ; pin_out          ;
+; |HEX7|HEX2[4]        ; |HEX7|HEX2[4]        ; pin_out          ;
+; |HEX7|HEX2[3]        ; |HEX7|HEX2[3]        ; pin_out          ;
+; |HEX7|HEX2[1]        ; |HEX7|HEX2[1]        ; pin_out          ;
+; |HEX7|HEX2[0]        ; |HEX7|HEX2[0]        ; pin_out          ;
+; |HEX7|7446:inst|96   ; |HEX7|7446:inst|96   ; out0             ;
+; |HEX7|7446:inst|36   ; |HEX7|7446:inst|36   ; out0             ;
+; |HEX7|7446:inst|39   ; |HEX7|7446:inst|39   ; out0             ;
+; |HEX7|7446:inst|35   ; |HEX7|7446:inst|35   ; out0             ;
+; |HEX7|7446:inst|97   ; |HEX7|7446:inst|97   ; out0             ;
+; |HEX7|7446:inst|34   ; |HEX7|7446:inst|34   ; out0             ;
+; |HEX7|7446:inst|7    ; |HEX7|7446:inst|7    ; out0             ;
+; |HEX7|7446:inst|8    ; |HEX7|7446:inst|8    ; out0             ;
+; |HEX7|7446:inst|33   ; |HEX7|7446:inst|33   ; out0             ;
+; |HEX7|7446:inst|99   ; |HEX7|7446:inst|99   ; out0             ;
+; |HEX7|7446:inst|5    ; |HEX7|7446:inst|5    ; out0             ;
+; |HEX7|7446:inst|3    ; |HEX7|7446:inst|3    ; out0             ;
+; |HEX7|7446:inst|4    ; |HEX7|7446:inst|4    ; out0             ;
+; |HEX7|7446:inst|100  ; |HEX7|7446:inst|100  ; out0             ;
+; |HEX7|7446:inst|32   ; |HEX7|7446:inst|32   ; out0             ;
+; |HEX7|7446:inst|31   ; |HEX7|7446:inst|31   ; out0             ;
+; |HEX7|7446:inst|2    ; |HEX7|7446:inst|2    ; out0             ;
+; |HEX7|7446:inst|1    ; |HEX7|7446:inst|1    ; out0             ;
+; |HEX7|7446:inst2|36  ; |HEX7|7446:inst2|36  ; out0             ;
+; |HEX7|7446:inst2|39  ; |HEX7|7446:inst2|39  ; out0             ;
+; |HEX7|7446:inst2|34  ; |HEX7|7446:inst2|34  ; out0             ;
+; |HEX7|7446:inst2|8   ; |HEX7|7446:inst2|8   ; out0             ;
+; |HEX7|7446:inst2|98  ; |HEX7|7446:inst2|98  ; out0             ;
+; |HEX7|7446:inst2|33  ; |HEX7|7446:inst2|33  ; out0             ;
+; |HEX7|7446:inst2|6   ; |HEX7|7446:inst2|6   ; out0             ;
+; |HEX7|7446:inst2|99  ; |HEX7|7446:inst2|99  ; out0             ;
+; |HEX7|7446:inst2|5   ; |HEX7|7446:inst2|5   ; out0             ;
+; |HEX7|7446:inst2|3   ; |HEX7|7446:inst2|3   ; out0             ;
+; |HEX7|7446:inst2|4   ; |HEX7|7446:inst2|4   ; out0             ;
+; |HEX7|7446:inst2|100 ; |HEX7|7446:inst2|100 ; out0             ;
+; |HEX7|7446:inst2|32  ; |HEX7|7446:inst2|32  ; out0             ;
+; |HEX7|7446:inst2|101 ; |HEX7|7446:inst2|101 ; out0             ;
+; |HEX7|7446:inst2|31  ; |HEX7|7446:inst2|31  ; out0             ;
+; |HEX7|7446:inst2|2   ; |HEX7|7446:inst2|2   ; out0             ;
+; |HEX7|7446:inst2|30  ; |HEX7|7446:inst2|30  ; out0             ;
+; |HEX7|7446:inst2|1   ; |HEX7|7446:inst2|1   ; out0             ;
+; |HEX7|7446:inst3|96  ; |HEX7|7446:inst3|96  ; out0             ;
+; |HEX7|7446:inst3|36  ; |HEX7|7446:inst3|36  ; out0             ;
+; |HEX7|7446:inst3|39  ; |HEX7|7446:inst3|39  ; out0             ;
+; |HEX7|7446:inst3|35  ; |HEX7|7446:inst3|35  ; out0             ;
+; |HEX7|7446:inst3|97  ; |HEX7|7446:inst3|97  ; out0             ;
+; |HEX7|7446:inst3|34  ; |HEX7|7446:inst3|34  ; out0             ;
+; |HEX7|7446:inst3|7   ; |HEX7|7446:inst3|7   ; out0             ;
+; |HEX7|7446:inst3|8   ; |HEX7|7446:inst3|8   ; out0             ;
+; |HEX7|7446:inst3|98  ; |HEX7|7446:inst3|98  ; out0             ;
+; |HEX7|7446:inst3|33  ; |HEX7|7446:inst3|33  ; out0             ;
+; |HEX7|7446:inst3|6   ; |HEX7|7446:inst3|6   ; out0             ;
+; |HEX7|7446:inst3|99  ; |HEX7|7446:inst3|99  ; out0             ;
+; |HEX7|7446:inst3|5   ; |HEX7|7446:inst3|5   ; out0             ;
+; |HEX7|7446:inst3|3   ; |HEX7|7446:inst3|3   ; out0             ;
+; |HEX7|7446:inst3|4   ; |HEX7|7446:inst3|4   ; out0             ;
+; |HEX7|7446:inst3|100 ; |HEX7|7446:inst3|100 ; out0             ;
+; |HEX7|7446:inst3|32  ; |HEX7|7446:inst3|32  ; out0             ;
+; |HEX7|7446:inst3|101 ; |HEX7|7446:inst3|101 ; out0             ;
+; |HEX7|7446:inst3|31  ; |HEX7|7446:inst3|31  ; out0             ;
+; |HEX7|7446:inst3|2   ; |HEX7|7446:inst3|2   ; out0             ;
+; |HEX7|7446:inst3|30  ; |HEX7|7446:inst3|30  ; out0             ;
+; |HEX7|7446:inst3|102 ; |HEX7|7446:inst3|102 ; out0             ;
+; |HEX7|7446:inst3|1   ; |HEX7|7446:inst3|1   ; out0             ;
+; |HEX7|7446:inst3|38  ; |HEX7|7446:inst3|38  ; out0             ;
++----------------------+----------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------+
+; Missing 0-Value Coverage                                       ;
++----------------------+----------------------+------------------+
+; Node Name            ; Output Port Name     ; Output Port Type ;
++----------------------+----------------------+------------------+
+; |HEX7|HEX0[6]        ; |HEX7|HEX0[6]        ; pin_out          ;
+; |HEX7|HEX0[5]        ; |HEX7|HEX0[5]        ; pin_out          ;
+; |HEX7|HEX0[4]        ; |HEX7|HEX0[4]        ; pin_out          ;
+; |HEX7|HEX0[3]        ; |HEX7|HEX0[3]        ; pin_out          ;
+; |HEX7|HEX0[2]        ; |HEX7|HEX0[2]        ; pin_out          ;
+; |HEX7|HEX0[1]        ; |HEX7|HEX0[1]        ; pin_out          ;
+; |HEX7|HEX0[0]        ; |HEX7|HEX0[0]        ; pin_out          ;
+; |HEX7|BCD_IN[11]     ; |HEX7|BCD_IN[11]     ; out              ;
+; |HEX7|BCD_IN[10]     ; |HEX7|BCD_IN[10]     ; out              ;
+; |HEX7|BCD_IN[8]      ; |HEX7|BCD_IN[8]      ; out              ;
+; |HEX7|BCD_IN[4]      ; |HEX7|BCD_IN[4]      ; out              ;
+; |HEX7|BCD_IN[3]      ; |HEX7|BCD_IN[3]      ; out              ;
+; |HEX7|BCD_IN[2]      ; |HEX7|BCD_IN[2]      ; out              ;
+; |HEX7|BCD_IN[1]      ; |HEX7|BCD_IN[1]      ; out              ;
+; |HEX7|BCD_IN[0]      ; |HEX7|BCD_IN[0]      ; out              ;
+; |HEX7|HEX1[5]        ; |HEX7|HEX1[5]        ; pin_out          ;
+; |HEX7|HEX1[4]        ; |HEX7|HEX1[4]        ; pin_out          ;
+; |HEX7|HEX1[3]        ; |HEX7|HEX1[3]        ; pin_out          ;
+; |HEX7|HEX1[2]        ; |HEX7|HEX1[2]        ; pin_out          ;
+; |HEX7|HEX2[4]        ; |HEX7|HEX2[4]        ; pin_out          ;
+; |HEX7|HEX2[3]        ; |HEX7|HEX2[3]        ; pin_out          ;
+; |HEX7|HEX2[1]        ; |HEX7|HEX2[1]        ; pin_out          ;
+; |HEX7|HEX2[0]        ; |HEX7|HEX2[0]        ; pin_out          ;
+; |HEX7|7446:inst|96   ; |HEX7|7446:inst|96   ; out0             ;
+; |HEX7|7446:inst|36   ; |HEX7|7446:inst|36   ; out0             ;
+; |HEX7|7446:inst|39   ; |HEX7|7446:inst|39   ; out0             ;
+; |HEX7|7446:inst|35   ; |HEX7|7446:inst|35   ; out0             ;
+; |HEX7|7446:inst|97   ; |HEX7|7446:inst|97   ; out0             ;
+; |HEX7|7446:inst|34   ; |HEX7|7446:inst|34   ; out0             ;
+; |HEX7|7446:inst|7    ; |HEX7|7446:inst|7    ; out0             ;
+; |HEX7|7446:inst|8    ; |HEX7|7446:inst|8    ; out0             ;
+; |HEX7|7446:inst|33   ; |HEX7|7446:inst|33   ; out0             ;
+; |HEX7|7446:inst|99   ; |HEX7|7446:inst|99   ; out0             ;
+; |HEX7|7446:inst|5    ; |HEX7|7446:inst|5    ; out0             ;
+; |HEX7|7446:inst|3    ; |HEX7|7446:inst|3    ; out0             ;
+; |HEX7|7446:inst|4    ; |HEX7|7446:inst|4    ; out0             ;
+; |HEX7|7446:inst|100  ; |HEX7|7446:inst|100  ; out0             ;
+; |HEX7|7446:inst|32   ; |HEX7|7446:inst|32   ; out0             ;
+; |HEX7|7446:inst|31   ; |HEX7|7446:inst|31   ; out0             ;
+; |HEX7|7446:inst|2    ; |HEX7|7446:inst|2    ; out0             ;
+; |HEX7|7446:inst|1    ; |HEX7|7446:inst|1    ; out0             ;
+; |HEX7|7446:inst2|36  ; |HEX7|7446:inst2|36  ; out0             ;
+; |HEX7|7446:inst2|39  ; |HEX7|7446:inst2|39  ; out0             ;
+; |HEX7|7446:inst2|34  ; |HEX7|7446:inst2|34  ; out0             ;
+; |HEX7|7446:inst2|8   ; |HEX7|7446:inst2|8   ; out0             ;
+; |HEX7|7446:inst2|98  ; |HEX7|7446:inst2|98  ; out0             ;
+; |HEX7|7446:inst2|33  ; |HEX7|7446:inst2|33  ; out0             ;
+; |HEX7|7446:inst2|6   ; |HEX7|7446:inst2|6   ; out0             ;
+; |HEX7|7446:inst2|99  ; |HEX7|7446:inst2|99  ; out0             ;
+; |HEX7|7446:inst2|5   ; |HEX7|7446:inst2|5   ; out0             ;
+; |HEX7|7446:inst2|3   ; |HEX7|7446:inst2|3   ; out0             ;
+; |HEX7|7446:inst2|4   ; |HEX7|7446:inst2|4   ; out0             ;
+; |HEX7|7446:inst2|100 ; |HEX7|7446:inst2|100 ; out0             ;
+; |HEX7|7446:inst2|32  ; |HEX7|7446:inst2|32  ; out0             ;
+; |HEX7|7446:inst2|101 ; |HEX7|7446:inst2|101 ; out0             ;
+; |HEX7|7446:inst2|31  ; |HEX7|7446:inst2|31  ; out0             ;
+; |HEX7|7446:inst2|2   ; |HEX7|7446:inst2|2   ; out0             ;
+; |HEX7|7446:inst2|30  ; |HEX7|7446:inst2|30  ; out0             ;
+; |HEX7|7446:inst2|1   ; |HEX7|7446:inst2|1   ; out0             ;
+; |HEX7|7446:inst3|96  ; |HEX7|7446:inst3|96  ; out0             ;
+; |HEX7|7446:inst3|36  ; |HEX7|7446:inst3|36  ; out0             ;
+; |HEX7|7446:inst3|39  ; |HEX7|7446:inst3|39  ; out0             ;
+; |HEX7|7446:inst3|35  ; |HEX7|7446:inst3|35  ; out0             ;
+; |HEX7|7446:inst3|97  ; |HEX7|7446:inst3|97  ; out0             ;
+; |HEX7|7446:inst3|34  ; |HEX7|7446:inst3|34  ; out0             ;
+; |HEX7|7446:inst3|7   ; |HEX7|7446:inst3|7   ; out0             ;
+; |HEX7|7446:inst3|8   ; |HEX7|7446:inst3|8   ; out0             ;
+; |HEX7|7446:inst3|98  ; |HEX7|7446:inst3|98  ; out0             ;
+; |HEX7|7446:inst3|33  ; |HEX7|7446:inst3|33  ; out0             ;
+; |HEX7|7446:inst3|6   ; |HEX7|7446:inst3|6   ; out0             ;
+; |HEX7|7446:inst3|99  ; |HEX7|7446:inst3|99  ; out0             ;
+; |HEX7|7446:inst3|5   ; |HEX7|7446:inst3|5   ; out0             ;
+; |HEX7|7446:inst3|3   ; |HEX7|7446:inst3|3   ; out0             ;
+; |HEX7|7446:inst3|4   ; |HEX7|7446:inst3|4   ; out0             ;
+; |HEX7|7446:inst3|100 ; |HEX7|7446:inst3|100 ; out0             ;
+; |HEX7|7446:inst3|32  ; |HEX7|7446:inst3|32  ; out0             ;
+; |HEX7|7446:inst3|101 ; |HEX7|7446:inst3|101 ; out0             ;
+; |HEX7|7446:inst3|31  ; |HEX7|7446:inst3|31  ; out0             ;
+; |HEX7|7446:inst3|2   ; |HEX7|7446:inst3|2   ; out0             ;
+; |HEX7|7446:inst3|30  ; |HEX7|7446:inst3|30  ; out0             ;
+; |HEX7|7446:inst3|102 ; |HEX7|7446:inst3|102 ; out0             ;
+; |HEX7|7446:inst3|1   ; |HEX7|7446:inst3|1   ; out0             ;
+; |HEX7|7446:inst3|38  ; |HEX7|7446:inst3|38  ; out0             ;
++----------------------+----------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Thu Jun 30 21:30:47 2022
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off HEX7 -c HEX7
+Info: Using vector source file "D:/我的/课程资料/硬件基础实践/进阶版CPU/七段译码器/HEX7/HEX7.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      20.95 %
+Info: Number of transitions in simulation is 58
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 159 megabytes
+    Info: Processing ended: Thu Jun 30 21:30:47 2022
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

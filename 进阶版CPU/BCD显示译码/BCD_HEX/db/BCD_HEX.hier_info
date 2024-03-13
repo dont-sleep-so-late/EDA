@@ -1,0 +1,173 @@
+|BCD_HEX
+HEX0[0] <= HEX7:inst.HEX0[0]
+HEX0[1] <= HEX7:inst.HEX0[1]
+HEX0[2] <= HEX7:inst.HEX0[2]
+HEX0[3] <= HEX7:inst.HEX0[3]
+HEX0[4] <= HEX7:inst.HEX0[4]
+HEX0[5] <= HEX7:inst.HEX0[5]
+HEX0[6] <= HEX7:inst.HEX0[6]
+F_in[0] => encode_BCD:inst1.hexin[0]
+F_in[1] => encode_BCD:inst1.hexin[1]
+F_in[2] => encode_BCD:inst1.hexin[2]
+F_in[3] => encode_BCD:inst1.hexin[3]
+F_in[4] => encode_BCD:inst1.hexin[4]
+F_in[5] => encode_BCD:inst1.hexin[5]
+F_in[6] => encode_BCD:inst1.hexin[6]
+F_in[7] => encode_BCD:inst1.hexin[7]
+HEX1[0] <= HEX7:inst.HEX1[0]
+HEX1[1] <= HEX7:inst.HEX1[1]
+HEX1[2] <= HEX7:inst.HEX1[2]
+HEX1[3] <= HEX7:inst.HEX1[3]
+HEX1[4] <= HEX7:inst.HEX1[4]
+HEX1[5] <= HEX7:inst.HEX1[5]
+HEX1[6] <= HEX7:inst.HEX1[6]
+HEX2[0] <= HEX7:inst.HEX2[0]
+HEX2[1] <= HEX7:inst.HEX2[1]
+HEX2[2] <= HEX7:inst.HEX2[2]
+HEX2[3] <= HEX7:inst.HEX2[3]
+HEX2[4] <= HEX7:inst.HEX2[4]
+HEX2[5] <= HEX7:inst.HEX2[5]
+HEX2[6] <= HEX7:inst.HEX2[6]
+
+
+|BCD_HEX|HEX7:inst
+HEX0[0] <= 7446:inst3.OA
+HEX0[1] <= 7446:inst3.OB
+HEX0[2] <= 7446:inst3.OC
+HEX0[3] <= 7446:inst3.OD
+HEX0[4] <= 7446:inst3.OE
+HEX0[5] <= 7446:inst3.OF
+HEX0[6] <= 7446:inst3.OG
+BCD_IN[0] => 7446:inst3.A
+BCD_IN[1] => 7446:inst3.B
+BCD_IN[2] => 7446:inst3.C
+BCD_IN[3] => 7446:inst3.D
+BCD_IN[4] => 7446:inst2.A
+BCD_IN[5] => 7446:inst2.B
+BCD_IN[6] => 7446:inst2.C
+BCD_IN[7] => 7446:inst2.D
+BCD_IN[8] => 7446:inst.A
+BCD_IN[9] => 7446:inst.B
+BCD_IN[10] => 7446:inst.C
+BCD_IN[11] => 7446:inst.D
+HEX1[0] <= 7446:inst2.OA
+HEX1[1] <= 7446:inst2.OB
+HEX1[2] <= 7446:inst2.OC
+HEX1[3] <= 7446:inst2.OD
+HEX1[4] <= 7446:inst2.OE
+HEX1[5] <= 7446:inst2.OF
+HEX1[6] <= 7446:inst2.OG
+HEX2[0] <= 7446:inst.OA
+HEX2[1] <= 7446:inst.OB
+HEX2[2] <= 7446:inst.OC
+HEX2[3] <= 7446:inst.OD
+HEX2[4] <= 7446:inst.OE
+HEX2[5] <= 7446:inst.OF
+HEX2[6] <= 7446:inst.OG
+
+
+|BCD_HEX|HEX7:inst|7446:inst3
+OA <= 96.DB_MAX_OUTPUT_PORT_TYPE
+B => 27.IN0
+LTN => 27.IN1
+LTN => 25.IN1
+LTN => 29.IN1
+LTN => 13.IN5
+LTN => 38.IN3
+BIN => 37.IN0
+C => 25.IN0
+D => 14.IN0
+A => 29.IN0
+RBIN => 15.IN0
+OB <= 97.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 98.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 99.DB_MAX_OUTPUT_PORT_TYPE
+RBON <= 13.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 100.DB_MAX_OUTPUT_PORT_TYPE
+OF <= 101.DB_MAX_OUTPUT_PORT_TYPE
+OG <= 102.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD_HEX|HEX7:inst|7446:inst2
+OA <= 96.DB_MAX_OUTPUT_PORT_TYPE
+B => 27.IN0
+LTN => 27.IN1
+LTN => 25.IN1
+LTN => 29.IN1
+LTN => 13.IN5
+LTN => 38.IN3
+BIN => 37.IN0
+C => 25.IN0
+D => 14.IN0
+A => 29.IN0
+RBIN => 15.IN0
+OB <= 97.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 98.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 99.DB_MAX_OUTPUT_PORT_TYPE
+RBON <= 13.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 100.DB_MAX_OUTPUT_PORT_TYPE
+OF <= 101.DB_MAX_OUTPUT_PORT_TYPE
+OG <= 102.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD_HEX|HEX7:inst|7446:inst
+OA <= 96.DB_MAX_OUTPUT_PORT_TYPE
+B => 27.IN0
+LTN => 27.IN1
+LTN => 25.IN1
+LTN => 29.IN1
+LTN => 13.IN5
+LTN => 38.IN3
+BIN => 37.IN0
+C => 25.IN0
+D => 14.IN0
+A => 29.IN0
+RBIN => 15.IN0
+OB <= 97.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 98.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 99.DB_MAX_OUTPUT_PORT_TYPE
+RBON <= 13.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 100.DB_MAX_OUTPUT_PORT_TYPE
+OF <= 101.DB_MAX_OUTPUT_PORT_TYPE
+OG <= 102.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD_HEX|encode_BCD:inst1
+hexin[0] => Div0.IN14
+hexin[0] => Mod0.IN15
+hexin[0] => Mod1.IN15
+hexin[1] => Div0.IN13
+hexin[1] => Mod0.IN14
+hexin[1] => Mod1.IN14
+hexin[2] => Div0.IN12
+hexin[2] => Mod0.IN13
+hexin[2] => Mod1.IN13
+hexin[3] => Div0.IN11
+hexin[3] => Mod0.IN12
+hexin[3] => Mod1.IN12
+hexin[4] => Div0.IN10
+hexin[4] => Mod0.IN11
+hexin[4] => Mod1.IN11
+hexin[5] => Div0.IN9
+hexin[5] => Mod0.IN10
+hexin[5] => Mod1.IN10
+hexin[6] => Div0.IN8
+hexin[6] => Mod0.IN9
+hexin[6] => Mod1.IN9
+hexin[7] => Div0.IN7
+hexin[7] => Mod0.IN8
+hexin[7] => Mod1.IN8
+BCDOUT[0] <= Mod1.DB_MAX_OUTPUT_PORT_TYPE
+BCDOUT[1] <= Mod1.DB_MAX_OUTPUT_PORT_TYPE
+BCDOUT[2] <= Mod1.DB_MAX_OUTPUT_PORT_TYPE
+BCDOUT[3] <= Mod1.DB_MAX_OUTPUT_PORT_TYPE
+BCDOUT[4] <= Div1.DB_MAX_OUTPUT_PORT_TYPE
+BCDOUT[5] <= Div1.DB_MAX_OUTPUT_PORT_TYPE
+BCDOUT[6] <= Div1.DB_MAX_OUTPUT_PORT_TYPE
+BCDOUT[7] <= Div1.DB_MAX_OUTPUT_PORT_TYPE
+BCDOUT[8] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+BCDOUT[9] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+BCDOUT[10] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+BCDOUT[11] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+
+

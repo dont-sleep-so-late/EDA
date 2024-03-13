@@ -1,0 +1,63 @@
+Quartus II
+Version 9.1 Build 222 10/21/2009 SJ Web Edition
+11
+1021
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+21mux
+# storage
+db|FourPulseGenerator.(1).cnf
+db|FourPulseGenerator.(1).cnf
+# case_insensitive
+# source_file
+|qurtqus|quartus|libraries|others|maxplus2|21mux.bdf
+bccbea98b91436c0e11f107c4fbff16a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+21mux:inst4
+}
+# macro_sequence
+
+# end
+# entity
+FourPulseGenerator
+# storage
+db|FourPulseGenerator.(0).cnf
+db|FourPulseGenerator.(0).cnf
+# case_insensitive
+# source_file
+fourpulsegenerator.bdf
+7338546122589075a496c51ca460d9f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

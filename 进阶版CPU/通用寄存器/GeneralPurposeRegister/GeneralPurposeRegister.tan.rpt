@@ -1,0 +1,433 @@
+Classic Timing Analyzer report for GeneralPurposeRegister
+Wed Jun 29 09:46:16 2022
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Parallel Compilation
+  6. tsu
+  7. tco
+  8. tpd
+  9. th
+ 10. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                                                                                                                                             ;
++------------------------------+-------+---------------+-------------+------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From                                                                               ; To                                                                                 ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+-------------+------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------+----------+--------------+
+; Worst-case tsu               ; N/A   ; None          ; 5.147 ns    ; data[6]                                                                            ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[6] ; --         ; g3       ; 0            ;
+; Worst-case tco               ; N/A   ; None          ; 9.611 ns    ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[0] ; R1[0]                                                                              ; g1         ; --       ; 0            ;
+; Worst-case tpd               ; N/A   ; None          ; 12.884 ns   ; Rs[0]                                                                              ; A[1]                                                                               ; --         ; --       ; 0            ;
+; Worst-case th                ; N/A   ; None          ; -3.254 ns   ; data[4]                                                                            ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[4] ; --         ; g2       ; 0            ;
+; Total number of failed paths ;       ;               ;             ;                                                                                    ;                                                                                    ;            ;          ; 0            ;
++------------------------------+-------+---------------+-------------+------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------+----------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                                                            ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                                                               ; Setting            ; From ; To ; Entity Name ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                                                          ; EP2C50F672C6       ;      ;    ;             ;
+; Timing Models                                                                                        ; Final              ;      ;    ;             ;
+; Default hold multicycle                                                                              ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                                                            ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                                                               ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                                                       ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                                                     ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                                                                ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                                                              ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                                                     ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                                                 ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                                                        ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                                                    ; 0                  ;      ;    ;             ;
+; Maximum Core Junction Temperature                                                                    ; 85                 ;      ;    ;             ;
+; Number of source nodes to report per destination node                                                ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                                                                ; 10                 ;      ;    ;             ;
+; Number of paths to report                                                                            ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                                                         ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                                                               ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                                                           ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                                                         ; On                 ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis                                       ; Off                ;      ;    ;             ;
+; Reports worst-case timing paths for each clock domain and analysis                                   ; On                 ;      ;    ;             ;
+; Specifies the maximum number of worst-case timing paths to report for each clock domain and analysis ; 100                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation                                  ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                                                           ; Near End           ;      ;    ;             ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; g2              ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
+; g0              ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
+; g3              ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
+; g1              ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 12     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; tsu                                                                                                                                         ;
++-------+--------------+------------+---------+------------------------------------------------------------------------------------+----------+
+; Slack ; Required tsu ; Actual tsu ; From    ; To                                                                                 ; To Clock ;
++-------+--------------+------------+---------+------------------------------------------------------------------------------------+----------+
+; N/A   ; None         ; 5.147 ns   ; data[6] ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[6] ; g3       ;
+; N/A   ; None         ; 4.995 ns   ; data[3] ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[3] ; g2       ;
+; N/A   ; None         ; 4.990 ns   ; data[6] ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[6]  ; g0       ;
+; N/A   ; None         ; 4.984 ns   ; data[3] ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[3] ; g1       ;
+; N/A   ; None         ; 4.982 ns   ; data[2] ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[2] ; g1       ;
+; N/A   ; None         ; 4.980 ns   ; data[6] ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[6] ; g1       ;
+; N/A   ; None         ; 4.968 ns   ; data[2] ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[2] ; g3       ;
+; N/A   ; None         ; 4.945 ns   ; data[0] ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[0] ; g1       ;
+; N/A   ; None         ; 4.939 ns   ; data[2] ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[2]  ; g0       ;
+; N/A   ; None         ; 4.928 ns   ; data[2] ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[2] ; g2       ;
+; N/A   ; None         ; 4.897 ns   ; data[3] ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[3] ; g3       ;
+; N/A   ; None         ; 4.873 ns   ; data[6] ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[6] ; g2       ;
+; N/A   ; None         ; 4.756 ns   ; data[0] ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[0] ; g2       ;
+; N/A   ; None         ; 4.754 ns   ; data[0] ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[0] ; g3       ;
+; N/A   ; None         ; 4.751 ns   ; data[0] ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[0]  ; g0       ;
+; N/A   ; None         ; 4.727 ns   ; data[3] ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[3]  ; g0       ;
+; N/A   ; None         ; 4.537 ns   ; data[1] ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[1] ; g1       ;
+; N/A   ; None         ; 4.504 ns   ; data[5] ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[5] ; g3       ;
+; N/A   ; None         ; 4.491 ns   ; data[7] ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[7] ; g2       ;
+; N/A   ; None         ; 4.415 ns   ; data[4] ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[4]  ; g0       ;
+; N/A   ; None         ; 4.397 ns   ; data[7] ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[7] ; g3       ;
+; N/A   ; None         ; 4.376 ns   ; data[1] ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[1] ; g3       ;
+; N/A   ; None         ; 4.356 ns   ; data[5] ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[5]  ; g0       ;
+; N/A   ; None         ; 4.352 ns   ; data[7] ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[7] ; g1       ;
+; N/A   ; None         ; 4.241 ns   ; data[1] ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[1] ; g2       ;
+; N/A   ; None         ; 4.233 ns   ; data[7] ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[7]  ; g0       ;
+; N/A   ; None         ; 4.218 ns   ; data[5] ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[5] ; g1       ;
+; N/A   ; None         ; 4.204 ns   ; data[1] ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[1]  ; g0       ;
+; N/A   ; None         ; 4.168 ns   ; data[5] ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[5] ; g2       ;
+; N/A   ; None         ; 4.132 ns   ; data[4] ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[4] ; g3       ;
+; N/A   ; None         ; 3.985 ns   ; data[4] ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[4] ; g1       ;
+; N/A   ; None         ; 3.932 ns   ; data[4] ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[4] ; g2       ;
++-------+--------------+------------+---------+------------------------------------------------------------------------------------+----------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; tco                                                                                                                                         ;
++-------+--------------+------------+------------------------------------------------------------------------------------+-------+------------+
+; Slack ; Required tco ; Actual tco ; From                                                                               ; To    ; From Clock ;
++-------+--------------+------------+------------------------------------------------------------------------------------+-------+------------+
+; N/A   ; None         ; 9.611 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[0] ; R1[0] ; g1         ;
+; N/A   ; None         ; 9.610 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[1]  ; A[1]  ; g0         ;
+; N/A   ; None         ; 9.507 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[3] ; A[3]  ; g2         ;
+; N/A   ; None         ; 9.502 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[3]  ; A[3]  ; g0         ;
+; N/A   ; None         ; 9.399 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[1] ; A[1]  ; g2         ;
+; N/A   ; None         ; 9.331 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[3] ; B[3]  ; g2         ;
+; N/A   ; None         ; 9.328 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[3]  ; B[3]  ; g0         ;
+; N/A   ; None         ; 9.092 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[7]  ; R0[7] ; g0         ;
+; N/A   ; None         ; 9.011 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[7]  ; A[7]  ; g0         ;
+; N/A   ; None         ; 8.968 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[0] ; B[0]  ; g1         ;
+; N/A   ; None         ; 8.884 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[4]  ; A[4]  ; g0         ;
+; N/A   ; None         ; 8.819 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[5]  ; B[5]  ; g0         ;
+; N/A   ; None         ; 8.797 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[2] ; A[2]  ; g1         ;
+; N/A   ; None         ; 8.795 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[5]  ; A[5]  ; g0         ;
+; N/A   ; None         ; 8.792 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[4]  ; B[4]  ; g0         ;
+; N/A   ; None         ; 8.776 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[7] ; A[7]  ; g2         ;
+; N/A   ; None         ; 8.578 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[0]  ; B[0]  ; g0         ;
+; N/A   ; None         ; 8.532 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[0]  ; A[0]  ; g0         ;
+; N/A   ; None         ; 8.513 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[1]  ; B[1]  ; g0         ;
+; N/A   ; None         ; 8.495 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[0] ; A[0]  ; g1         ;
+; N/A   ; None         ; 8.468 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[4] ; A[4]  ; g1         ;
+; N/A   ; None         ; 8.465 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[2] ; B[2]  ; g1         ;
+; N/A   ; None         ; 8.430 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[4] ; B[4]  ; g1         ;
+; N/A   ; None         ; 8.401 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[7]  ; B[7]  ; g0         ;
+; N/A   ; None         ; 8.363 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[5] ; B[5]  ; g2         ;
+; N/A   ; None         ; 8.341 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[5] ; A[5]  ; g2         ;
+; N/A   ; None         ; 8.156 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[7] ; B[7]  ; g2         ;
+; N/A   ; None         ; 8.145 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[2]  ; A[2]  ; g0         ;
+; N/A   ; None         ; 8.136 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[6]  ; A[6]  ; g0         ;
+; N/A   ; None         ; 8.100 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[6] ; B[6]  ; g1         ;
+; N/A   ; None         ; 8.079 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[1] ; A[1]  ; g1         ;
+; N/A   ; None         ; 8.073 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[6] ; A[6]  ; g1         ;
+; N/A   ; None         ; 8.033 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[0] ; B[0]  ; g3         ;
+; N/A   ; None         ; 7.948 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[6]  ; B[6]  ; g0         ;
+; N/A   ; None         ; 7.941 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[6] ; A[6]  ; g2         ;
+; N/A   ; None         ; 7.917 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[4] ; A[4]  ; g2         ;
+; N/A   ; None         ; 7.888 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[2]  ; R0[2] ; g0         ;
+; N/A   ; None         ; 7.887 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[7] ; A[7]  ; g3         ;
+; N/A   ; None         ; 7.879 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[4] ; B[4]  ; g2         ;
+; N/A   ; None         ; 7.873 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[1] ; A[1]  ; g3         ;
+; N/A   ; None         ; 7.851 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[0] ; A[0]  ; g3         ;
+; N/A   ; None         ; 7.836 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[5] ; B[5]  ; g1         ;
+; N/A   ; None         ; 7.816 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[1] ; B[1]  ; g2         ;
+; N/A   ; None         ; 7.792 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[7] ; A[7]  ; g1         ;
+; N/A   ; None         ; 7.710 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[5]  ; R0[5] ; g0         ;
+; N/A   ; None         ; 7.710 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[5] ; A[5]  ; g1         ;
+; N/A   ; None         ; 7.588 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[3] ; A[3]  ; g1         ;
+; N/A   ; None         ; 7.581 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[2] ; A[2]  ; g2         ;
+; N/A   ; None         ; 7.579 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[7] ; B[7]  ; g3         ;
+; N/A   ; None         ; 7.561 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[2] ; A[2]  ; g3         ;
+; N/A   ; None         ; 7.538 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[0] ; B[0]  ; g2         ;
+; N/A   ; None         ; 7.508 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[5] ; R3[5] ; g3         ;
+; N/A   ; None         ; 7.487 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[2]  ; B[2]  ; g0         ;
+; N/A   ; None         ; 7.485 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[7] ; B[7]  ; g1         ;
+; N/A   ; None         ; 7.459 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[3] ; A[3]  ; g3         ;
+; N/A   ; None         ; 7.451 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[6] ; B[6]  ; g2         ;
+; N/A   ; None         ; 7.428 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[6] ; A[6]  ; g3         ;
+; N/A   ; None         ; 7.425 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[7] ; R2[7] ; g2         ;
+; N/A   ; None         ; 7.334 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[3] ; B[3]  ; g1         ;
+; N/A   ; None         ; 7.311 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[0]  ; R0[0] ; g0         ;
+; N/A   ; None         ; 7.291 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[6] ; R2[6] ; g2         ;
+; N/A   ; None         ; 7.271 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[5] ; A[5]  ; g3         ;
+; N/A   ; None         ; 7.247 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[4] ; B[4]  ; g3         ;
+; N/A   ; None         ; 7.244 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[2] ; B[2]  ; g3         ;
+; N/A   ; None         ; 7.232 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[2] ; R1[2] ; g1         ;
+; N/A   ; None         ; 7.217 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[2] ; R3[2] ; g3         ;
+; N/A   ; None         ; 7.214 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[0] ; A[0]  ; g2         ;
+; N/A   ; None         ; 7.204 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[3] ; B[3]  ; g3         ;
+; N/A   ; None         ; 7.161 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[1] ; B[1]  ; g1         ;
+; N/A   ; None         ; 7.143 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[0] ; R3[0] ; g3         ;
+; N/A   ; None         ; 7.138 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[4] ; A[4]  ; g3         ;
+; N/A   ; None         ; 7.106 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[4]  ; R0[4] ; g0         ;
+; N/A   ; None         ; 7.099 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[2] ; B[2]  ; g2         ;
+; N/A   ; None         ; 7.096 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[5] ; B[5]  ; g3         ;
+; N/A   ; None         ; 7.092 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[1] ; B[1]  ; g3         ;
+; N/A   ; None         ; 7.041 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[4] ; R2[4] ; g2         ;
+; N/A   ; None         ; 7.000 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[6] ; R1[6] ; g1         ;
+; N/A   ; None         ; 6.937 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[5] ; R1[5] ; g1         ;
+; N/A   ; None         ; 6.932 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[6] ; B[6]  ; g3         ;
+; N/A   ; None         ; 6.867 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[2] ; R2[2] ; g2         ;
+; N/A   ; None         ; 6.820 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[3] ; R2[3] ; g2         ;
+; N/A   ; None         ; 6.794 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[4] ; R1[4] ; g1         ;
+; N/A   ; None         ; 6.786 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[3]  ; R0[3] ; g0         ;
+; N/A   ; None         ; 6.709 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[7] ; R1[7] ; g1         ;
+; N/A   ; None         ; 6.660 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[0] ; R2[0] ; g2         ;
+; N/A   ; None         ; 6.654 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[1] ; R2[1] ; g2         ;
+; N/A   ; None         ; 6.534 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[1]  ; R0[1] ; g0         ;
+; N/A   ; None         ; 6.415 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[4] ; R3[4] ; g3         ;
+; N/A   ; None         ; 6.401 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[6] ; R3[6] ; g3         ;
+; N/A   ; None         ; 6.382 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[7] ; R3[7] ; g3         ;
+; N/A   ; None         ; 6.381 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[1] ; R3[1] ; g3         ;
+; N/A   ; None         ; 6.367 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[3] ; R3[3] ; g3         ;
+; N/A   ; None         ; 6.345 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[5] ; R2[5] ; g2         ;
+; N/A   ; None         ; 6.307 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[6]  ; R0[6] ; g0         ;
+; N/A   ; None         ; 6.186 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[1] ; R1[1] ; g1         ;
+; N/A   ; None         ; 6.185 ns   ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[3] ; R1[3] ; g1         ;
++-------+--------------+------------+------------------------------------------------------------------------------------+-------+------------+
+
+
++------------------------------------------------------------+
+; tpd                                                        ;
++-------+-------------------+-----------------+-------+------+
+; Slack ; Required P2P Time ; Actual P2P Time ; From  ; To   ;
++-------+-------------------+-----------------+-------+------+
+; N/A   ; None              ; 12.884 ns       ; Rs[0] ; A[1] ;
+; N/A   ; None              ; 12.332 ns       ; Rs[1] ; A[1] ;
+; N/A   ; None              ; 12.278 ns       ; Rs[0] ; A[3] ;
+; N/A   ; None              ; 12.204 ns       ; Rs[0] ; A[7] ;
+; N/A   ; None              ; 12.173 ns       ; Rs[0] ; A[2] ;
+; N/A   ; None              ; 12.046 ns       ; Rd[1] ; B[0] ;
+; N/A   ; None              ; 11.909 ns       ; Rd[0] ; B[3] ;
+; N/A   ; None              ; 11.874 ns       ; Rs[0] ; A[0] ;
+; N/A   ; None              ; 11.835 ns       ; Rd[1] ; B[3] ;
+; N/A   ; None              ; 11.804 ns       ; Rs[0] ; A[5] ;
+; N/A   ; None              ; 11.787 ns       ; Rs[1] ; A[3] ;
+; N/A   ; None              ; 11.770 ns       ; Rs[1] ; A[2] ;
+; N/A   ; None              ; 11.676 ns       ; Rd[0] ; B[7] ;
+; N/A   ; None              ; 11.673 ns       ; Rs[1] ; A[7] ;
+; N/A   ; None              ; 11.591 ns       ; Rs[0] ; A[6] ;
+; N/A   ; None              ; 11.478 ns       ; Rs[1] ; A[0] ;
+; N/A   ; None              ; 11.463 ns       ; Rd[1] ; B[5] ;
+; N/A   ; None              ; 11.457 ns       ; Rd[1] ; B[1] ;
+; N/A   ; None              ; 11.456 ns       ; Rd[0] ; B[6] ;
+; N/A   ; None              ; 11.389 ns       ; Rd[0] ; B[5] ;
+; N/A   ; None              ; 11.321 ns       ; Rs[0] ; A[4] ;
+; N/A   ; None              ; 11.224 ns       ; Rd[1] ; B[2] ;
+; N/A   ; None              ; 11.199 ns       ; Rd[1] ; B[7] ;
+; N/A   ; None              ; 11.123 ns       ; Rd[0] ; B[0] ;
+; N/A   ; None              ; 11.092 ns       ; Rd[0] ; B[4] ;
+; N/A   ; None              ; 11.030 ns       ; Rs[1] ; A[6] ;
+; N/A   ; None              ; 11.022 ns       ; Rd[1] ; B[4] ;
+; N/A   ; None              ; 11.005 ns       ; Rd[1] ; B[6] ;
+; N/A   ; None              ; 10.947 ns       ; Rs[1] ; A[4] ;
+; N/A   ; None              ; 10.862 ns       ; Rd[0] ; B[1] ;
+; N/A   ; None              ; 10.724 ns       ; Rs[1] ; A[5] ;
+; N/A   ; None              ; 10.304 ns       ; Rd[0] ; B[2] ;
++-------+-------------------+-----------------+-------+------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; th                                                                                                                                                ;
++---------------+-------------+-----------+---------+------------------------------------------------------------------------------------+----------+
+; Minimum Slack ; Required th ; Actual th ; From    ; To                                                                                 ; To Clock ;
++---------------+-------------+-----------+---------+------------------------------------------------------------------------------------+----------+
+; N/A           ; None        ; -3.254 ns ; data[4] ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[4] ; g2       ;
+; N/A           ; None        ; -3.307 ns ; data[4] ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[4] ; g1       ;
+; N/A           ; None        ; -3.423 ns ; data[1] ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[1] ; g2       ;
+; N/A           ; None        ; -3.436 ns ; data[4] ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[4] ; g3       ;
+; N/A           ; None        ; -3.491 ns ; data[5] ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[5] ; g2       ;
+; N/A           ; None        ; -3.529 ns ; data[1] ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[1]  ; g0       ;
+; N/A           ; None        ; -3.543 ns ; data[5] ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[5] ; g1       ;
+; N/A           ; None        ; -3.551 ns ; data[7] ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[7]  ; g0       ;
+; N/A           ; None        ; -3.639 ns ; data[7] ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[7] ; g1       ;
+; N/A           ; None        ; -3.640 ns ; data[1] ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[1] ; g1       ;
+; N/A           ; None        ; -3.669 ns ; data[5] ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[5] ; g3       ;
+; N/A           ; None        ; -3.679 ns ; data[5] ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[5]  ; g0       ;
+; N/A           ; None        ; -3.681 ns ; data[1] ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[1] ; g3       ;
+; N/A           ; None        ; -3.683 ns ; data[7] ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[7] ; g3       ;
+; N/A           ; None        ; -3.740 ns ; data[4] ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[4]  ; g0       ;
+; N/A           ; None        ; -3.797 ns ; data[0] ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[0]  ; g0       ;
+; N/A           ; None        ; -3.800 ns ; data[0] ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[0] ; g3       ;
+; N/A           ; None        ; -3.801 ns ; data[7] ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[7] ; g2       ;
+; N/A           ; None        ; -3.930 ns ; data[0] ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[0] ; g2       ;
+; N/A           ; None        ; -4.053 ns ; data[3] ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[3]  ; g0       ;
+; N/A           ; None        ; -4.095 ns ; data[2] ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[2] ; g3       ;
+; N/A           ; None        ; -4.122 ns ; data[0] ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[0] ; g1       ;
+; N/A           ; None        ; -4.160 ns ; data[3] ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[3] ; g1       ;
+; N/A           ; None        ; -4.177 ns ; data[3] ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[3] ; g2       ;
+; N/A           ; None        ; -4.193 ns ; data[6] ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[6] ; g2       ;
+; N/A           ; None        ; -4.207 ns ; data[3] ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[3] ; g3       ;
+; N/A           ; None        ; -4.221 ns ; data[2] ; FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[2] ; g2       ;
+; N/A           ; None        ; -4.230 ns ; data[2] ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[2]  ; g0       ;
+; N/A           ; None        ; -4.295 ns ; data[6] ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[6] ; g1       ;
+; N/A           ; None        ; -4.300 ns ; data[6] ; FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[6]  ; g0       ;
+; N/A           ; None        ; -4.310 ns ; data[2] ; FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[2] ; g1       ;
+; N/A           ; None        ; -4.432 ns ; data[6] ; FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[6] ; g3       ;
++---------------+-------------+-----------+---------+------------------------------------------------------------------------------------+----------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Wed Jun 29 09:46:16 2022
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off GeneralPurposeRegister -c GeneralPurposeRegister --timing_analysis_only
+Warning: Timing Analysis is analyzing one or more combinational loops as latches
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[7]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[7]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[7]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[7]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[6]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[6]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[6]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[6]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[5]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[5]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[5]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[5]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[4]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[4]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[4]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[4]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[3]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[3]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[3]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[3]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[2]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[2]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[2]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[2]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[1]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[1]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[1]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[1]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst|lpm_latch:lpm_latch_component|latches[0]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[0]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[0]" is a latch
+    Warning: Node "FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[0]" is a latch
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "g2" is a latch enable. Will not compute fmax for this pin.
+    Info: Assuming node "g0" is a latch enable. Will not compute fmax for this pin.
+    Info: Assuming node "g3" is a latch enable. Will not compute fmax for this pin.
+    Info: Assuming node "g1" is a latch enable. Will not compute fmax for this pin.
+Info: tsu for register "FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[6]" (data pin = "data[6]", clock pin = "g3") is 5.147 ns
+    Info: + Longest pin to register delay is 7.129 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.870 ns) = 0.870 ns; Loc. = PIN_D6; Fanout = 4; PIN Node = 'data[6]'
+        Info: 2: + IC(5.821 ns) + CELL(0.438 ns) = 7.129 ns; Loc. = LCCOMB_X25_Y40_N14; Fanout = 3; REG Node = 'FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[6]'
+        Info: Total cell delay = 1.308 ns ( 18.35 % )
+        Info: Total interconnect delay = 5.821 ns ( 81.65 % )
+    Info: + Micro setup delay of destination is 0.715 ns
+    Info: - Shortest clock path from clock "g3" to destination register is 2.697 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.979 ns) = 0.979 ns; Loc. = PIN_C13; Fanout = 1; CLK Node = 'g3'
+        Info: 2: + IC(0.117 ns) + CELL(0.000 ns) = 1.096 ns; Loc. = CLKCTRL_G11; Fanout = 8; COMB Node = 'g3~clkctrl'
+        Info: 3: + IC(1.451 ns) + CELL(0.150 ns) = 2.697 ns; Loc. = LCCOMB_X25_Y40_N14; Fanout = 3; REG Node = 'FourRegister:inst|lpm_latch_reg8bit:inst3|lpm_latch:lpm_latch_component|latches[6]'
+        Info: Total cell delay = 1.129 ns ( 41.86 % )
+        Info: Total interconnect delay = 1.568 ns ( 58.14 % )
+Info: tco from clock "g1" to destination pin "R1[0]" through register "FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[0]" is 9.611 ns
+    Info: + Longest clock path from clock "g1" to source register is 2.745 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.989 ns) = 0.989 ns; Loc. = PIN_P1; Fanout = 1; CLK Node = 'g1'
+        Info: 2: + IC(0.114 ns) + CELL(0.000 ns) = 1.103 ns; Loc. = CLKCTRL_G1; Fanout = 8; COMB Node = 'g1~clkctrl'
+        Info: 3: + IC(1.492 ns) + CELL(0.150 ns) = 2.745 ns; Loc. = LCCOMB_X34_Y40_N18; Fanout = 3; REG Node = 'FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[0]'
+        Info: Total cell delay = 1.139 ns ( 41.49 % )
+        Info: Total interconnect delay = 1.606 ns ( 58.51 % )
+    Info: + Micro clock to output delay of source is 0.000 ns
+    Info: + Longest register to pin delay is 6.866 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCCOMB_X34_Y40_N18; Fanout = 3; REG Node = 'FourRegister:inst|lpm_latch_reg8bit:inst1|lpm_latch:lpm_latch_component|latches[0]'
+        Info: 2: + IC(4.088 ns) + CELL(2.778 ns) = 6.866 ns; Loc. = PIN_Y12; Fanout = 0; PIN Node = 'R1[0]'
+        Info: Total cell delay = 2.778 ns ( 40.46 % )
+        Info: Total interconnect delay = 4.088 ns ( 59.54 % )
+Info: Longest tpd from source pin "Rs[0]" to destination pin "A[1]" is 12.884 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.872 ns) = 0.872 ns; Loc. = PIN_C25; Fanout = 12; PIN Node = 'Rs[0]'
+    Info: 2: + IC(6.270 ns) + CELL(0.150 ns) = 7.292 ns; Loc. = LCCOMB_X38_Y40_N12; Fanout = 1; COMB Node = 'mux41:inst1|lpm_mux41:inst|lpm_mux:lpm_mux_component|mux_vmc:auto_generated|result_node[1]~12'
+    Info: 3: + IC(0.994 ns) + CELL(0.150 ns) = 8.436 ns; Loc. = LCCOMB_X34_Y40_N26; Fanout = 1; COMB Node = 'mux41:inst1|lpm_mux41:inst|lpm_mux:lpm_mux_component|mux_vmc:auto_generated|result_node[1]~13'
+    Info: 4: + IC(1.826 ns) + CELL(2.622 ns) = 12.884 ns; Loc. = PIN_G5; Fanout = 0; PIN Node = 'A[1]'
+    Info: Total cell delay = 3.794 ns ( 29.45 % )
+    Info: Total interconnect delay = 9.090 ns ( 70.55 % )
+Info: th for register "FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[4]" (data pin = "data[4]", clock pin = "g2") is -3.254 ns
+    Info: + Longest clock path from clock "g2" to destination register is 2.877 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.989 ns) = 0.989 ns; Loc. = PIN_N2; Fanout = 1; CLK Node = 'g2'
+        Info: 2: + IC(0.117 ns) + CELL(0.000 ns) = 1.106 ns; Loc. = CLKCTRL_G2; Fanout = 8; COMB Node = 'g2~clkctrl'
+        Info: 3: + IC(1.496 ns) + CELL(0.275 ns) = 2.877 ns; Loc. = LCCOMB_X26_Y40_N10; Fanout = 3; REG Node = 'FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[4]'
+        Info: Total cell delay = 1.264 ns ( 43.93 % )
+        Info: Total interconnect delay = 1.613 ns ( 56.07 % )
+    Info: + Micro hold delay of destination is 0.000 ns
+    Info: - Shortest pin to register delay is 6.131 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.850 ns) = 0.850 ns; Loc. = PIN_B10; Fanout = 4; PIN Node = 'data[4]'
+        Info: 2: + IC(4.866 ns) + CELL(0.415 ns) = 6.131 ns; Loc. = LCCOMB_X26_Y40_N10; Fanout = 3; REG Node = 'FourRegister:inst|lpm_latch_reg8bit:inst2|lpm_latch:lpm_latch_component|latches[4]'
+        Info: Total cell delay = 1.265 ns ( 20.63 % )
+        Info: Total interconnect delay = 4.866 ns ( 79.37 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 34 warnings
+    Info: Peak virtual memory: 197 megabytes
+    Info: Processing ended: Wed Jun 29 09:46:16 2022
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

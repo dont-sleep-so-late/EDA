@@ -1,0 +1,250 @@
+Classic Timing Analyzer report for IR
+Tue Jun 28 21:40:10 2022
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Parallel Compilation
+  6. tsu
+  7. tco
+  8. th
+  9. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                                                                                               ;
++------------------------------+-------+---------------+-------------+-------------------------------------------------------------+-------------------------------------------------------------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From                                                        ; To                                                          ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+-------------+-------------------------------------------------------------+-------------------------------------------------------------+------------+----------+--------------+
+; Worst-case tsu               ; N/A   ; None          ; 5.317 ns    ; IR_data[12]                                                 ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[12] ; --         ; gate     ; 0            ;
+; Worst-case tco               ; N/A   ; None          ; 10.038 ns   ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[13] ; IR[13]                                                      ; gate       ; --       ; 0            ;
+; Worst-case th                ; N/A   ; None          ; -0.329 ns   ; IR_data[15]                                                 ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[15] ; --         ; gate     ; 0            ;
+; Total number of failed paths ;       ;               ;             ;                                                             ;                                                             ;            ;          ; 0            ;
++------------------------------+-------+---------------+-------------+-------------------------------------------------------------+-------------------------------------------------------------+------------+----------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                                                            ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                                                               ; Setting            ; From ; To ; Entity Name ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                                                          ; EP2C35F672C6       ;      ;    ;             ;
+; Timing Models                                                                                        ; Final              ;      ;    ;             ;
+; Default hold multicycle                                                                              ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                                                            ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                                                               ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                                                       ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                                                     ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                                                                ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                                                              ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                                                     ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                                                 ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                                                        ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                                                    ; 0                  ;      ;    ;             ;
+; Maximum Core Junction Temperature                                                                    ; 85                 ;      ;    ;             ;
+; Number of source nodes to report per destination node                                                ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                                                                ; 10                 ;      ;    ;             ;
+; Number of paths to report                                                                            ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                                                         ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                                                               ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                                                           ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                                                         ; On                 ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis                                       ; Off                ;      ;    ;             ;
+; Reports worst-case timing paths for each clock domain and analysis                                   ; On                 ;      ;    ;             ;
+; Specifies the maximum number of worst-case timing paths to report for each clock domain and analysis ; 100                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation                                  ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                                                           ; Near End           ;      ;    ;             ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; gate            ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 12     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; tsu                                                                                                                      ;
++-------+--------------+------------+-------------+-------------------------------------------------------------+----------+
+; Slack ; Required tsu ; Actual tsu ; From        ; To                                                          ; To Clock ;
++-------+--------------+------------+-------------+-------------------------------------------------------------+----------+
+; N/A   ; None         ; 5.317 ns   ; IR_data[12] ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[12] ; gate     ;
+; N/A   ; None         ; 5.192 ns   ; IR_data[9]  ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[9]  ; gate     ;
+; N/A   ; None         ; 5.164 ns   ; IR_data[5]  ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[5]  ; gate     ;
+; N/A   ; None         ; 4.940 ns   ; IR_data[8]  ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[8]  ; gate     ;
+; N/A   ; None         ; 4.906 ns   ; IR_data[4]  ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[4]  ; gate     ;
+; N/A   ; None         ; 4.904 ns   ; IR_data[11] ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[11] ; gate     ;
+; N/A   ; None         ; 4.903 ns   ; IR_data[13] ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[13] ; gate     ;
+; N/A   ; None         ; 4.888 ns   ; IR_data[14] ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[14] ; gate     ;
+; N/A   ; None         ; 4.860 ns   ; IR_data[3]  ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[3]  ; gate     ;
+; N/A   ; None         ; 4.822 ns   ; IR_data[10] ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[10] ; gate     ;
+; N/A   ; None         ; 4.772 ns   ; IR_data[0]  ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[0]  ; gate     ;
+; N/A   ; None         ; 4.762 ns   ; IR_data[6]  ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[6]  ; gate     ;
+; N/A   ; None         ; 4.612 ns   ; IR_data[2]  ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[2]  ; gate     ;
+; N/A   ; None         ; 4.525 ns   ; IR_data[1]  ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[1]  ; gate     ;
+; N/A   ; None         ; 4.441 ns   ; IR_data[7]  ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[7]  ; gate     ;
+; N/A   ; None         ; 1.191 ns   ; IR_data[15] ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[15] ; gate     ;
++-------+--------------+------------+-------------+-------------------------------------------------------------+----------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; tco                                                                                                                   ;
++-------+--------------+------------+-------------------------------------------------------------+--------+------------+
+; Slack ; Required tco ; Actual tco ; From                                                        ; To     ; From Clock ;
++-------+--------------+------------+-------------------------------------------------------------+--------+------------+
+; N/A   ; None         ; 10.038 ns  ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[13] ; IR[13] ; gate       ;
+; N/A   ; None         ; 8.746 ns   ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[12] ; IR[12] ; gate       ;
+; N/A   ; None         ; 8.002 ns   ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[15] ; IR[15] ; gate       ;
+; N/A   ; None         ; 7.728 ns   ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[1]  ; IR[1]  ; gate       ;
+; N/A   ; None         ; 7.657 ns   ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[3]  ; IR[3]  ; gate       ;
+; N/A   ; None         ; 7.502 ns   ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[9]  ; IR[9]  ; gate       ;
+; N/A   ; None         ; 7.212 ns   ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[8]  ; IR[8]  ; gate       ;
+; N/A   ; None         ; 7.175 ns   ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[11] ; IR[11] ; gate       ;
+; N/A   ; None         ; 6.883 ns   ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[10] ; IR[10] ; gate       ;
+; N/A   ; None         ; 6.832 ns   ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[6]  ; IR[6]  ; gate       ;
+; N/A   ; None         ; 6.815 ns   ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[2]  ; IR[2]  ; gate       ;
+; N/A   ; None         ; 6.792 ns   ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[0]  ; IR[0]  ; gate       ;
+; N/A   ; None         ; 6.788 ns   ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[4]  ; IR[4]  ; gate       ;
+; N/A   ; None         ; 6.728 ns   ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[5]  ; IR[5]  ; gate       ;
+; N/A   ; None         ; 6.715 ns   ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[14] ; IR[14] ; gate       ;
+; N/A   ; None         ; 6.696 ns   ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[7]  ; IR[7]  ; gate       ;
++-------+--------------+------------+-------------------------------------------------------------+--------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; th                                                                                                                             ;
++---------------+-------------+-----------+-------------+-------------------------------------------------------------+----------+
+; Minimum Slack ; Required th ; Actual th ; From        ; To                                                          ; To Clock ;
++---------------+-------------+-----------+-------------+-------------------------------------------------------------+----------+
+; N/A           ; None        ; -0.329 ns ; IR_data[15] ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[15] ; gate     ;
+; N/A           ; None        ; -3.755 ns ; IR_data[7]  ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[7]  ; gate     ;
+; N/A           ; None        ; -3.847 ns ; IR_data[1]  ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[1]  ; gate     ;
+; N/A           ; None        ; -3.940 ns ; IR_data[2]  ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[2]  ; gate     ;
+; N/A           ; None        ; -4.024 ns ; IR_data[14] ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[14] ; gate     ;
+; N/A           ; None        ; -4.084 ns ; IR_data[6]  ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[6]  ; gate     ;
+; N/A           ; None        ; -4.098 ns ; IR_data[0]  ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[0]  ; gate     ;
+; N/A           ; None        ; -4.116 ns ; IR_data[8]  ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[8]  ; gate     ;
+; N/A           ; None        ; -4.144 ns ; IR_data[10] ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[10] ; gate     ;
+; N/A           ; None        ; -4.174 ns ; IR_data[3]  ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[3]  ; gate     ;
+; N/A           ; None        ; -4.217 ns ; IR_data[13] ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[13] ; gate     ;
+; N/A           ; None        ; -4.218 ns ; IR_data[11] ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[11] ; gate     ;
+; N/A           ; None        ; -4.220 ns ; IR_data[4]  ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[4]  ; gate     ;
+; N/A           ; None        ; -4.478 ns ; IR_data[5]  ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[5]  ; gate     ;
+; N/A           ; None        ; -4.514 ns ; IR_data[9]  ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[9]  ; gate     ;
+; N/A           ; None        ; -4.640 ns ; IR_data[12] ; lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[12] ; gate     ;
++---------------+-------------+-----------+-------------+-------------------------------------------------------------+----------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Tue Jun 28 21:40:10 2022
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off IR -c IR --timing_analysis_only
+Warning: Timing Analysis is analyzing one or more combinational loops as latches
+    Warning: Node "lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[15]" is a latch
+    Warning: Node "lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[14]" is a latch
+    Warning: Node "lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[13]" is a latch
+    Warning: Node "lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[12]" is a latch
+    Warning: Node "lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[11]" is a latch
+    Warning: Node "lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[10]" is a latch
+    Warning: Node "lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[9]" is a latch
+    Warning: Node "lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[8]" is a latch
+    Warning: Node "lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[7]" is a latch
+    Warning: Node "lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[6]" is a latch
+    Warning: Node "lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[5]" is a latch
+    Warning: Node "lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[4]" is a latch
+    Warning: Node "lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[3]" is a latch
+    Warning: Node "lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[2]" is a latch
+    Warning: Node "lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[1]" is a latch
+    Warning: Node "lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[0]" is a latch
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "gate" is a latch enable. Will not compute fmax for this pin.
+Info: tsu for register "lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[12]" (data pin = "IR_data[12]", clock pin = "gate") is 5.317 ns
+    Info: + Longest pin to register delay is 7.442 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.840 ns) = 0.840 ns; Loc. = PIN_AC10; Fanout = 1; PIN Node = 'IR_data[12]'
+        Info: 2: + IC(6.187 ns) + CELL(0.415 ns) = 7.442 ns; Loc. = LCCOMB_X10_Y27_N6; Fanout = 1; REG Node = 'lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[12]'
+        Info: Total cell delay = 1.255 ns ( 16.86 % )
+        Info: Total interconnect delay = 6.187 ns ( 83.14 % )
+    Info: + Micro setup delay of destination is 0.677 ns
+    Info: - Shortest clock path from clock "gate" to destination register is 2.802 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.999 ns) = 0.999 ns; Loc. = PIN_P2; Fanout = 1; CLK Node = 'gate'
+        Info: 2: + IC(0.118 ns) + CELL(0.000 ns) = 1.117 ns; Loc. = CLKCTRL_G3; Fanout = 16; COMB Node = 'gate~clkctrl'
+        Info: 3: + IC(1.410 ns) + CELL(0.275 ns) = 2.802 ns; Loc. = LCCOMB_X10_Y27_N6; Fanout = 1; REG Node = 'lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[12]'
+        Info: Total cell delay = 1.274 ns ( 45.47 % )
+        Info: Total interconnect delay = 1.528 ns ( 54.53 % )
+Info: tco from clock "gate" to destination pin "IR[13]" through register "lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[13]" is 10.038 ns
+    Info: + Longest clock path from clock "gate" to source register is 2.695 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.999 ns) = 0.999 ns; Loc. = PIN_P2; Fanout = 1; CLK Node = 'gate'
+        Info: 2: + IC(0.118 ns) + CELL(0.000 ns) = 1.117 ns; Loc. = CLKCTRL_G3; Fanout = 16; COMB Node = 'gate~clkctrl'
+        Info: 3: + IC(1.428 ns) + CELL(0.150 ns) = 2.695 ns; Loc. = LCCOMB_X10_Y27_N4; Fanout = 1; REG Node = 'lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[13]'
+        Info: Total cell delay = 1.149 ns ( 42.63 % )
+        Info: Total interconnect delay = 1.546 ns ( 57.37 % )
+    Info: + Micro clock to output delay of source is 0.000 ns
+    Info: + Longest register to pin delay is 7.343 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCCOMB_X10_Y27_N4; Fanout = 1; REG Node = 'lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[13]'
+        Info: 2: + IC(4.545 ns) + CELL(2.798 ns) = 7.343 ns; Loc. = PIN_AE17; Fanout = 0; PIN Node = 'IR[13]'
+        Info: Total cell delay = 2.798 ns ( 38.10 % )
+        Info: Total interconnect delay = 4.545 ns ( 61.90 % )
+Info: th for register "lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[15]" (data pin = "IR_data[15]", clock pin = "gate") is -0.329 ns
+    Info: + Longest clock path from clock "gate" to destination register is 2.695 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.999 ns) = 0.999 ns; Loc. = PIN_P2; Fanout = 1; CLK Node = 'gate'
+        Info: 2: + IC(0.118 ns) + CELL(0.000 ns) = 1.117 ns; Loc. = CLKCTRL_G3; Fanout = 16; COMB Node = 'gate~clkctrl'
+        Info: 3: + IC(1.428 ns) + CELL(0.150 ns) = 2.695 ns; Loc. = LCCOMB_X10_Y27_N0; Fanout = 1; REG Node = 'lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[15]'
+        Info: Total cell delay = 1.149 ns ( 42.63 % )
+        Info: Total interconnect delay = 1.546 ns ( 57.37 % )
+    Info: + Micro hold delay of destination is 0.000 ns
+    Info: - Shortest pin to register delay is 3.024 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.979 ns) = 0.979 ns; Loc. = PIN_C13; Fanout = 1; PIN Node = 'IR_data[15]'
+        Info: 2: + IC(1.630 ns) + CELL(0.415 ns) = 3.024 ns; Loc. = LCCOMB_X10_Y27_N0; Fanout = 1; REG Node = 'lpm_latch_IR:inst|lpm_latch:lpm_latch_component|latches[15]'
+        Info: Total cell delay = 1.394 ns ( 46.10 % )
+        Info: Total interconnect delay = 1.630 ns ( 53.90 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 18 warnings
+    Info: Peak virtual memory: 195 megabytes
+    Info: Processing ended: Tue Jun 28 21:40:10 2022
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="CPU">
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|BCD_HEX:inst4|encode_BCD:inst1|lpm_divide:Mod1" CBX_FILE_NAME="lpm_divide_85m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|GeneralPurposeRegister:inst7|mux41:inst1|lpm_mux41:inst5|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_vmc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|BCD_HEX:inst4|encode_BCD:inst1|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_1dm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|BCD_HEX:inst4|encode_BCD:inst1|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_85m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|GeneralPurposeRegister:inst7|mux41:inst1|lpm_mux41:inst|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_vmc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|OC:inst16|lpm_mux_A41:inst1|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_vmc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|OC:inst16|lpm_mux_B41:inst2|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_vmc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|PC:inst|lpm_counter_pc:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_p2j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|ROM_instruction:inst1|lpm_ir:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_ho91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|BCD_HEX:inst4|encode_BCD:inst1|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_4dm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|ROM_data:inst8|lpm_rom_data:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_c871.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

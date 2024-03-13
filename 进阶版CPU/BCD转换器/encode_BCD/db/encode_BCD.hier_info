@@ -1,0 +1,39 @@
+|encode_BCD
+hexin[0] => Div0.IN14
+hexin[0] => Mod0.IN15
+hexin[0] => Mod1.IN15
+hexin[1] => Div0.IN13
+hexin[1] => Mod0.IN14
+hexin[1] => Mod1.IN14
+hexin[2] => Div0.IN12
+hexin[2] => Mod0.IN13
+hexin[2] => Mod1.IN13
+hexin[3] => Div0.IN11
+hexin[3] => Mod0.IN12
+hexin[3] => Mod1.IN12
+hexin[4] => Div0.IN10
+hexin[4] => Mod0.IN11
+hexin[4] => Mod1.IN11
+hexin[5] => Div0.IN9
+hexin[5] => Mod0.IN10
+hexin[5] => Mod1.IN10
+hexin[6] => Div0.IN8
+hexin[6] => Mod0.IN9
+hexin[6] => Mod1.IN9
+hexin[7] => Div0.IN7
+hexin[7] => Mod0.IN8
+hexin[7] => Mod1.IN8
+BCDOUT[0] <= Mod1.DB_MAX_OUTPUT_PORT_TYPE
+BCDOUT[1] <= Mod1.DB_MAX_OUTPUT_PORT_TYPE
+BCDOUT[2] <= Mod1.DB_MAX_OUTPUT_PORT_TYPE
+BCDOUT[3] <= Mod1.DB_MAX_OUTPUT_PORT_TYPE
+BCDOUT[4] <= Div1.DB_MAX_OUTPUT_PORT_TYPE
+BCDOUT[5] <= Div1.DB_MAX_OUTPUT_PORT_TYPE
+BCDOUT[6] <= Div1.DB_MAX_OUTPUT_PORT_TYPE
+BCDOUT[7] <= Div1.DB_MAX_OUTPUT_PORT_TYPE
+BCDOUT[8] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+BCDOUT[9] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+BCDOUT[10] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+BCDOUT[11] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+
+
